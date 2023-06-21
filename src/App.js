@@ -1,5 +1,6 @@
+import ProductsDetailsPage from "./Pages/ProductsDetailsPage";
 function App() {
-  return <div className="App"></div>;
+  return <ProductsDetailsPage />;
 }
 
 export default App;
