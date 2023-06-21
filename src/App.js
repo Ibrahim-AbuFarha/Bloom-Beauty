@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <ProductsPage/>
       <Profile />
-    <Footer/>
+    {/* <Footer/> */}
     </div>
   );
 }

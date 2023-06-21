@@ -15,7 +15,7 @@ function ProductCate() {
   const AllProducts = proArr.map((item) => {
     return (
       <div className="col-sm-3" key={item.id}>
-        <div className="card">
+        <div style={{marginBottom : "1em" , height : "70vh"}} className="card">
           <div
             style={{
               display: "flex",
@@ -29,6 +29,7 @@ function ProductCate() {
               src={item.image_link}
               className="img-fluid"
               alt="This is alt pic"
+              style={{width : "100px"}}
             />
             <a href="#!">
               <div
@@ -39,12 +40,12 @@ function ProductCate() {
           </div>
           <div className="card-body">
             <h5 className="card-title">{item.name}</h5>
-            <p className="card-text" style={{ fontSize: "0.9em" }}>
+            <p className="card-text" style={{ fontSize: "0.8em" }}>
               {item.description}
             </p>
             <p>{item.price}js</p>
             <a href="#!" className="btn btn-primary">
-              Button
+              Add to cart
             </a>
           </div>
         </div>
@@ -52,10 +53,10 @@ function ProductCate() {
     );
   });
   return (
-    <div>
+    <div className="allCate" style={{paddingLeft : "1em"}}>
       {proArr.map((el) => {
         return (
-          <div key={el.id} style={{ flexWrap: "wrap" }} className="row">
+          <div key={el.id} style={{ flexWrap: "wrap" }} className="row ">
             {AllProducts}
           </div>
         );

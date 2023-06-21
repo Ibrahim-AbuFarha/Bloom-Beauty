@@ -7,8 +7,11 @@ export default function ProductsPage(){
     return(
         <>  
         <NavBar /> 
+        <div className="sec2" style={{display : "flex" , padding : "2em" , justifyContent : "space-between"}}>
         <SideBar />
         <ProductCate />
+        </div>
+        
         </>
     )
 }
