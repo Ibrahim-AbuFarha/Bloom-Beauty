@@ -2,19 +2,15 @@
   "users": [
     {
       "id": 1,
-      "name": "John Doe",
-      "email": "john@example.com",
-      "address": "123 Main St, City",
-      "phone": "123-456-7890",
-      "orders": [1, 2]
+      "name": "Jane",
+      "email": "jane@example.com",
+      "password": "123456"
     },
     {
-      "id": 2,
-      "name": "Jane Smith",
-      "email": "jane@example.com",
-      "address": "456 Elm St, City",
-      "phone": "987-654-3210",
-      "orders": [3]
+      "username": "ibrahim",
+      "password": "123456",
+      "email": "ibrahim@gmail.com",
+      "id": 2
     }
   ],
   "carts": [
@@ -34,47 +30,12 @@
           "price": 19.99,
           "quantity": 1
         }
-      ],
-      "createdAt": "2023-06-20T10:30:00Z"
+      ]
     },
     {
-      "id": 2,
       "userId": 2,
-      "products": [
-        {
-          "id": 3,
-          "name": "Product 3",
-          "price": 5.99,
-          "quantity": 1
-        }
-      ],
-      "createdAt": "2023-06-20T15:45:00Z"
-    }
-  ],
-  "products": [
-    {
-      "id": 1,
-      "name": "Product 1",
-      "price": 10.99,
-      "description": "Lorem ipsum dolor sit amet.",
-      "image": "product1.jpg",
-      "category": "Electronics"
-    },
-    {
-      "id": 2,
-      "name": "Product 2",
-      "price": 19.99,
-      "description": "Consectetur adipiscing elit.",
-      "image": "product2.jpg",
-      "category": "Clothing"
-    },
-    {
-      "id": 3,
-      "name": "Product 3",
-      "price": 5.99,
-      "description": "Praesent at tempus est.",
-      "image": "product3.jpg",
-      "category": "Home"
+      "products": [],
+      "id": 2
     }
   ],
   "orders": [
