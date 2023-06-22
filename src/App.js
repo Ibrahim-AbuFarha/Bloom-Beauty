@@ -1,10 +1,10 @@
 // import './App.css';
 
 // import './App.css';
-import Footer from "./components/Footer/Footer";
-import ProfileSection from "./Pages/ProfileSection";
-import ProductsPage from "./components/ProductsPage/ProductsPage";
-import HomePage from "./components/HomePage/HomePage";
+// import Footer from "./components/Footer/Footer";
+// import ProfileSection from "./Pages/ProfileSection";
+// import ProductsPage from "./components/ProductsPage/ProductsPage";
+import HomePage from "./Pages/HomePage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import SignIn from "./components/SingIp/SignIn";
