@@ -1,5 +1,5 @@
 // collection of your components page
-import Profile from "../components/profileSection/Profile";
+import Profile from "./Profile";
 import React from "react";
 
 function ProfileSection() {

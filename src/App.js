@@ -2,7 +2,7 @@
 
 // import './App.css';
 import Footer from "./components/Footer/Footer";
-import ProfileSection from "./Pages/ProfileSection";
+import ProfileSection from "./components/profileSection/ProfileSection";
 import ProductsPage from "./components/ProductsPage/ProductsPage";
 import HomePage from "./components/HomePage/HomePage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
