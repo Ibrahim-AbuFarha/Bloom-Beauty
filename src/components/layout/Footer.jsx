@@ -16,11 +16,11 @@ export default function App() {
       style={{ backgroundColor: "black" }}
     >
       <section
-        className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+        className="d-flex justify-content-center p-4 border-bottom"
         style={{ color: "white" }}
       >
         <div className="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
+          <span>Get connected with us on social networks</span>
         </div>
 
         <div></div>
@@ -32,12 +32,12 @@ export default function App() {
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">
                 <MDBIcon icon="gem" className="me-3" />
-                Company name
+                Bloom Beauty
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+                A place that houses all things hair, makeup, skin and nails,
+                plus knowledgeable associates to guide you along your beauty
+                journey. .
               </p>
             </MDBCol>
 
@@ -45,22 +45,22 @@ export default function App() {
               <h6 className="text-uppercase fw-bold mb-4">Products</h6>
               <p>
                 <a href="#!" className="text-reset">
-                  Angular
+                  Makeup
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  React
+                  Foundations
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Vue
+                  Concealer
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Laravel
+                  Skincare
                 </a>
               </p>
             </MDBCol>
@@ -93,11 +93,11 @@ export default function App() {
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
               <p>
                 <MDBIcon icon="home" className="me-2" />
-                New York, NY 10012, US
+                Amman, Jordan
               </p>
               <p>
                 <MDBIcon icon="envelope" className="me-3" />
-                info@example.com
+                BloomBeauty@Gmail.com
               </p>
               <p>
                 <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
@@ -110,11 +110,11 @@ export default function App() {
         </MDBContainer>
       </section>
 
-      <div className="text-center p-4" style={{ backgroundColor: "black"}}>
-        © 2021 Copyright:
-        <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-          MDBootstrap.com
-        </a>
+      <div
+        className="text-center p-4"
+        style={{ backgroundColor: "black", color: "white" }}
+      >
+        © 2023 Copyright: Bloom Beauty
       </div>
     </MDBFooter>
   );
