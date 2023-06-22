@@ -1,3 +1,88 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": 1,
+      "name": "Jane",
+      "email": "jane@example.com",
+      "password": "123456"
+    },
+    {
+      "username": "ibrahim",
+      "password": "123456",
+      "email": "ibrahim@gmail.com",
+      "id": 2
+    }
+  ],
+  "carts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "products": [
+        {
+          "id": 1,
+          "name": "Product 1",
+          "price": 10.99,
+          "quantity": 2
+        },
+        {
+          "id": 2,
+          "name": "Product 2",
+          "price": 19.99,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "userId": 2,
+      "products": [],
+      "id": 2
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "products": [
+        {
+          "id": 1,
+          "name": "Product 1",
+          "price": 10.99,
+          "quantity": 2
+        }
+      ],
+      "total": 21.98,
+      "status": "Shipped",
+      "createdAt": "2023-06-20T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "products": [
+        {
+          "id": 2,
+          "name": "Product 2",
+          "price": 19.99,
+          "quantity": 1
+        }
+      ],
+      "total": 19.99,
+      "status": "Processing",
+      "createdAt": "2023-06-20T10:45:00Z"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "products": [
+        {
+          "id": 3,
+          "name": "Product 3",
+          "price": 5.99,
+          "quantity": 1
+        }
+      ],
+      "total": 5.99,
+      "status": "Delivered",
+      "createdAt": "2023-06-20T15:45:00Z"
+    }
+  ]
 }
