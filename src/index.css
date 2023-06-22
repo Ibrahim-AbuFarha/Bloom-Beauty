@@ -1,0 +1,24 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+  :root {
+    --off-white: #fcfcff;
+    --gray: #8498af;
+    --blue-gray: #697586;
+    --white: #ffff;
+    --black: #383838;
+    --purple: #b0a6bd;
+    --pink: #f5a3b7;
+    --light-pink: #fee2e3;
+    --green: #7fccc6;
+    --red: #e77373;
+    --orange: #FDB64E;}
+    
+    .container{
+        max-width: 1280px;
+        margin-inline:auto;
+    }

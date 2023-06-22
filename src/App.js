@@ -1,19 +1,13 @@
+import ProductPage from "./pages/ProductPage";
+import CartPage from "./pages/CartPage";
+import { useEffect } from "react";
+import axios from "axios";
+import SignUp from "./components/SignUp/SignUp";
 
-// import './App.css';
-// import Footer from "./components/layout/Footer"
-import Profile from "./components/profileSection/Profile";
-import ProductsPage from './Pages/ProductsPage';
+// axios.post('localhost:3001/users',{name , password , email , })
+
 function App() {
-
-  return (
-    <div className="App">
-      <ProductsPage/>
-      <Profile />
-    {/* <Footer/> */}
-    </div>
-  );
+  return <SignUp></SignUp>;
 }
 
-
 export default App;
-
