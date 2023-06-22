@@ -110,31 +110,22 @@ export default function CarouselWrapper() {
       <MDBCarouselItem
         className="w-100 d-block"
         itemId={1}
-        src="https://www.abeautyedit.com/wp-content/uploads/2020/06/best-of-maybelline-drugstore-makeup-f2.jpg"
+        src="https://d3e7ardzpaj3y4.cloudfront.net/image/catalog%2Fapp_component%2F1686646812_undefined_69868371_eidofferwebsizear-1500x1500.png"
         alt="..."
-      >
-        <h5>First slide label</h5>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </MDBCarouselItem>
+      ></MDBCarouselItem>
       <MDBCarouselItem
         className="w-100 d-block"
         itemId={2}
-        src="https://i0.wp.com/colleenhobson.com/wp-content/uploads/2020/02/New-Maybelline-Makeup-Feature-Image.png?fit=1000%2C600&ssl=1"
+        src="https://d3e7ardzpaj3y4.cloudfront.net/image/catalog%2Fapp_component%2F1685358238_undefined_43299718_websizecallaar-1500x1500.png"
         alt="..."
-      >
-        <h5>Second slide label</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </MDBCarouselItem>
-
+      ></MDBCarouselItem>
       <MDBCarouselItem
         className="w-100 d-block"
         itemId={3}
-        src="https://assets.boots.com/content/dam/boots/brands/brand---m/maybelline/maybeline_bt-update_21-03-2022/2022-02_maybelline_brand-treatment_50-teaser_maybelline-bestsellers.dam.ts%3D1647873719149.jpg"
+        src="https://d3e7ardzpaj3y4.cloudfront.net/image/catalog%2Fapp_component%2F1686646812_undefined_69868371_eidofferwebsizear-1500x1500.png"
         alt="..."
-      >
-        <h5>Third slide label</h5>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-      </MDBCarouselItem>
+      ></MDBCarouselItem>
+      npm i @fortawesome/fontawesome-free
     </MDBCarousel>
   );
 }

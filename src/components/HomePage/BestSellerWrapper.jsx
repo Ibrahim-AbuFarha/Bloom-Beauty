@@ -5,6 +5,7 @@ export default function BestSellerWrapper() {
       {/* <!-- Product Card --> */}
 
       <div className="container py-5">
+        <h2 className="besSeller-title">Best Sellers</h2>
         <div className="row">
           <div className="col-lg-3">
             <div className="product_card">
