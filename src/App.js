@@ -13,7 +13,11 @@ import SignUp from "./components/SignUp/SignUp";
 // axios.post('localhost:3001/users',{name , password , email , })
 
 function App() {
-  return <HomePage />;
+  return (
+    <div>
+      <HomePage />
+    </div>
+  );
 }
 
 export default App;

@@ -7,7 +7,7 @@ export default function HomePage() {
     <>
       <CarouselWrapper />
       <BestSellerWrapper />
-      <Testimonials />
+      {/* <Testimonials /> */}
     </>
   );
 }
