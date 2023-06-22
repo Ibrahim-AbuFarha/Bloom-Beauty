@@ -11,7 +11,7 @@ import {
   MDBRow,
 } from "mdb-react-ui-kit";
 
-export default function Testimonials() {
+  function Testimonials() {
   return (
     <MDBContainer fluid className="py-5 gradient-custom">
       <MDBRow className="d-flex justify-content-center">
@@ -150,3 +150,5 @@ export default function Testimonials() {
     </MDBContainer>
   );
 }
+
+export default Testimonials;

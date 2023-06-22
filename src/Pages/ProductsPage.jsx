@@ -1,8 +1,9 @@
 // collection of your comp
-import NavBar  from "../components/layout/NavBar";
-import ProductCate from "../components/products/ProductCate"  ; 
-import SideBar from "../components/products/SideBar";
-import './pages.css';
+import NavBar from "../components/NavBar/NavBar"
+import SideBar from "../components/ProductsPage/SideBar";
+import "../components/ProductsPage/Products.css"
+import ProductCate from "../components/ProductsPage/ProductCate"
+
 
 
 export default function ProductsPage(){
@@ -17,3 +18,9 @@ export default function ProductsPage(){
         </>
     )
 }
+
+
+///////////////
+
+
+
