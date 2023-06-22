@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.navPageinations {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PageInation {
+  width: 40%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  background-color:white;
+  padding: 0.1em 1.1em;
+  border-radius: 6px;
+  border: 1px solid rgb(191, 184, 184);
+  cursor: pointer;
+}
+
+.PageInation > .Page-item {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
+  padding: 0.7em;
+  font-size: 1.1em ;
+  font-weight: 500;
+}
+.PageInation > .Page-item:hover {
+    background-color: rgb(254, 186, 195, 0.5);
+    
+}
+
+.PageInation > .Page-item > a {
+    color: rgb(182 101 121);
+}
