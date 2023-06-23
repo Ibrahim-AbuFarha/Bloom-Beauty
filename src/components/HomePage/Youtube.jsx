@@ -1,45 +1,29 @@
-import { MDBContainer } from "mdb-react-ui-kit";
 import React from "react";
+import YouTube from "react-youtube";
+import CarouselWrapper from "./CarouselWrapper";
 
-// export default function Youtube() {
-//   return (
-//     <MDBContainer>
-//       <div className="ratio ratio-16x9">
-//         <iframe
-//           style={{ height: "350" }}
-//           src="https://www.youtube.com/watch?v=dmSCJ8eIB3c"
-//           title="YouTube video"
-//           allowfullscreen
-//         ></iframe>
-//       </div>
-//     </MDBContainer>
-//   );
-// }
-// import YouTube from "react-youtube";
+const HeroSection = ({ videoId }) => {
+  const videoOpts = {
+    playerVars: {
+      autoplay: 1,
+      controls: 0,
+      // loop: 100,
+      modestbranding: 1,
+      showinfo: 0,
+      rel: 0,
+      iv_load_policy: 3,
+      fs: 0,
+      disablekb: 1,
+      playsinline: 1,
+      mute: 1,
+    },
+  };
 
-// export default function Youtube() {
-//   const videoId = "https://www.youtube.com/watch?v=DrJKf86XDLE";
-
-//   return (
-//     <div>
-//       {console.log(videoId)}
-//       <YouTube videoId={videoId} />
-//     </div>
-//   );
-// }
-//
-export default function YouTube() {
   return (
-    <section className="youtube-section">
-      <iframe
-        width="660"
-        height="315"
-        src="https://www.youtube.com/watch?v=MTgeUVOxl8E"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </section>
+    <div className="hero-section">
+      <YouTube videoId={videoId} opts={videoOpts} className="video-iframe" />
+    </div>
   );
-}
+};
+
+export default HeroSection;

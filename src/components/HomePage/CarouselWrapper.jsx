@@ -125,7 +125,6 @@ export default function CarouselWrapper() {
         src="https://d3e7ardzpaj3y4.cloudfront.net/image/catalog%2Fapp_component%2F1681205380_undefined_42966515_-Recovered-23-1500x1500.png"
         alt="..."
       ></MDBCarouselItem>
-      npm i @fortawesome/fontawesome-free
     </MDBCarousel>
   );
 }
