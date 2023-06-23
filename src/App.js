@@ -22,9 +22,19 @@ import ProductDetailsPage from "./Pages/ProductDetailsPage";
 // axios.post('localhost:3001/users',{name , password , email , })
 
 function App() {
-  return <CartPage />;
-  return <></>;
-  return <div></div>;
+  return (
+    <>
+      <CartPage />
+      <ProductPage />
+      <SignUp />
+      <Cart />
+      <Footer />
+      <NavBar />
+      <SignIn />
+      <NavBar />
+      <ProductDetailsPage />
+    </>
+  );
 }
 
 export default App;
