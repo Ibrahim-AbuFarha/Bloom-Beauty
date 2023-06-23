@@ -1,8 +1,9 @@
 // collection of your components page
 import axios from "axios";
 import React, { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 function SignIn() {
+  const navigate=useNavigate()
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [err, setError] = useState(null);
@@ -18,7 +19,7 @@ function SignIn() {
 
       // save the user
       localStorage.setItem("user", JSON.stringify(user[0]));
-      console.log("ok");
+      navigate('/home')
       // navigate to new page
     } catch (err) {
       console.log(err);

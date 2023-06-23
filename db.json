@@ -5,6 +5,12 @@
       "password": "123123123",
       "email": "majed@majed.com",
       "id": 1
+    },
+    {
+      "username": "ibrahim",
+      "password": "123123123",
+      "email": "ibrahim1@gmail.com",
+      "id": 2
     }
   ],
   "carts": [
@@ -12,6 +18,11 @@
       "userId": 1,
       "cartItems": [],
       "id": 1
+    },
+    {
+      "userId": 2,
+      "cartItems": [],
+      "id": 2
     }
   ],
   "orders": []

@@ -35,14 +35,14 @@ function NavBar() {
             {/* <!-- Left links --> */}
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" href="/#">
+                <Link className="nav-link" to={'/home'}>
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/#">
+                <Link className="nav-link" to={'/products'}>
                   Products
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 {/* <a className="nav-link" href="/#">Projects</a> */}
@@ -112,6 +112,7 @@ function NavBar() {
                   alt="Black and White Portrait of a Man"
                   loading="lazy"
                 />
+                <Link to={'/signIn'}>
                 <button
                   type="button"
                   class="btn btn-primary"
@@ -119,6 +120,7 @@ function NavBar() {
                 >
                   LogOut
                 </button>
+                </Link>
               </a>
               <ul
                 className="dropdown-menu dropdown-menu-end"
