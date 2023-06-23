@@ -39,3 +39,62 @@
 .PageInation > .Page-item > a {
     color: rgb(182 101 121);
 }
+
+.active {
+  background-color: rgb(194, 129, 144);
+}
+
+/* Card Component Styling */
+
+.card_Container {
+  width: 270px;
+  height: 350px;
+  border: 1px solid rgb(179, 177, 177);
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 20px 0 0;
+}
+
+.img > img {
+  width: 140px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 41%;
+  gap: 1.5em;
+}
+
+.details > p {
+  font-size: 1.1em;
+}
+
+.btn {
+  width: 70%;
+  text-align: center;
+  /* position: absolute; */
+  bottom: 0px;
+  height: 13%;
+  font-size: 1.05em;
+  font-weight: 500;
+  color: black;
+  border: 1px solid black;
+
+}
+
+
+
+
+
