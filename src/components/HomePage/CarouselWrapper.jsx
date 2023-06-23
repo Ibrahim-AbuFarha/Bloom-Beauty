@@ -110,19 +110,19 @@ export default function CarouselWrapper() {
       <MDBCarouselItem
         className="w-100 d-block"
         itemId={1}
-        src="https://d3e7ardzpaj3y4.cloudfront.net/image/catalog%2Fapp_component%2F1686646812_undefined_69868371_eidofferwebsizear-1500x1500.png"
+        src="https://d3e7ardzpaj3y4.cloudfront.net/image/catalog%2Fapp_component%2F1685953635_undefined_81131346_celiawebsizeeng-1500x1500.png"
         alt="..."
       ></MDBCarouselItem>
       <MDBCarouselItem
         className="w-100 d-block"
         itemId={2}
-        src="https://d3e7ardzpaj3y4.cloudfront.net/image/catalog%2Fapp_component%2F1685358238_undefined_43299718_websizecallaar-1500x1500.png"
+        src="https://d3e7ardzpaj3y4.cloudfront.net/image/catalog%2Fapp_component%2F1685358667_undefined_28069200_ftwebsizear-1500x1500.png"
         alt="..."
       ></MDBCarouselItem>
       <MDBCarouselItem
         className="w-100 d-block"
         itemId={3}
-        src="https://d3e7ardzpaj3y4.cloudfront.net/image/catalog%2Fapp_component%2F1686646812_undefined_69868371_eidofferwebsizear-1500x1500.png"
+        src="https://d3e7ardzpaj3y4.cloudfront.net/image/catalog%2Fapp_component%2F1681205380_undefined_42966515_-Recovered-23-1500x1500.png"
         alt="..."
       ></MDBCarouselItem>
       npm i @fortawesome/fontawesome-free

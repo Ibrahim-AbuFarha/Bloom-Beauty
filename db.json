@@ -11,31 +11,34 @@
       "password": "123456",
       "email": "ibrahim@gmail.com",
       "id": 2
+    },
+    {
+      "username": "amer",
+      "password": "askdjf",
+      "email": "naser",
+      "id": 3
     }
   ],
   "carts": [
     {
       "id": 1,
       "userId": 1,
-      "products": [
+      "cartItems": [
         {
-          "id": 1,
-          "name": "Product 1",
-          "price": 10.99,
-          "quantity": 2
+          "name": "Maybelline Face Studio Master Hi-Light Light Booster Blush",
+          "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/4621032a92cb428ad640c105b944b39c_ra,w158,h184_pa,w158,h184.png",
+          "quantity": 2,
+          "price": "14.99",
+          "id": 468
         },
         {
-          "id": 2,
-          "name": "Product 2",
-          "price": 19.99,
-          "quantity": 1
+          "name": "Maybelline Dream Smooth Mousse Foundation",
+          "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/fb79e7facf701176d4113527c284613f_ra,w158,h184_pa,w158,h184.png",
+          "quantity": 3,
+          "price": "14.79",
+          "id": 382
         }
       ]
-    },
-    {
-      "userId": 2,
-      "products": [],
-      "id": 2
     }
   ],
   "orders": [
@@ -70,19 +73,86 @@
       "createdAt": "2023-06-20T10:45:00Z"
     },
     {
-      "id": 3,
-      "userId": 2,
-      "products": [
+      "userId": 1,
+      "orderItems": [
         {
           "id": 3,
           "name": "Product 3",
-          "price": 5.99,
-          "quantity": 1
+          "price": 19.99,
+          "quantity": 1,
+          "image": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00104/v/36.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Product ",
+          "price": 19.99,
+          "quantity": 1,
+          "image": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00104/v/36.jpg"
+        },
+        {
+          "name": "Maybelline Fit Me Bronzer",
+          "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/d4f7d82b4858c622bb3c1cef07b9d850_ra,w158,h184_pa,w158,h184.png",
+          "quantity": 1,
+          "price": "10.29",
+          "id": 488
+        },
+        {
+          "name": "Maybelline Face Studio Master Hi-Light Light Booster Blush",
+          "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/4621032a92cb428ad640c105b944b39c_ra,w158,h184_pa,w158,h184.png",
+          "quantity": 2,
+          "price": "14.99",
+          "id": 468
+        },
+        {
+          "name": "Maybelline Dream Smooth Mousse Foundation",
+          "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/fb79e7facf701176d4113527c284613f_ra,w158,h184_pa,w158,h184.png",
+          "quantity": 1,
+          "price": "14.79",
+          "id": 382
         }
       ],
-      "total": 5.99,
-      "status": "Delivered",
-      "createdAt": "2023-06-20T15:45:00Z"
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "orderItems": [
+        {
+          "id": 3,
+          "name": "Product 3",
+          "price": 19.99,
+          "quantity": 1,
+          "image": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00104/v/36.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Product ",
+          "price": 19.99,
+          "quantity": 1,
+          "image": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00104/v/36.jpg"
+        },
+        {
+          "name": "Maybelline Fit Me Bronzer",
+          "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/d4f7d82b4858c622bb3c1cef07b9d850_ra,w158,h184_pa,w158,h184.png",
+          "quantity": 1,
+          "price": "10.29",
+          "id": 488
+        },
+        {
+          "name": "Maybelline Face Studio Master Hi-Light Light Booster Blush",
+          "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/4621032a92cb428ad640c105b944b39c_ra,w158,h184_pa,w158,h184.png",
+          "quantity": 2,
+          "price": "14.99",
+          "id": 468
+        },
+        {
+          "name": "Maybelline Dream Smooth Mousse Foundation",
+          "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/fb79e7facf701176d4113527c284613f_ra,w158,h184_pa,w158,h184.png",
+          "quantity": 1,
+          "price": "14.79",
+          "id": 382
+        }
+      ],
+      "id": 4
     }
   ]
 }
