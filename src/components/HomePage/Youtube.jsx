@@ -20,9 +20,9 @@ const HeroSection = ({ videoId }) => {
   };
 
   return (
-    <div className="hero-section">
+    <section className="hero-section">
       <YouTube videoId={videoId} opts={videoOpts} className="video-iframe" />
-    </div>
+    </section>
   );
 };
 
