@@ -1,7 +1,7 @@
 // collection of your comp
 import NavBar from "../components/NavBar/NavBar"
 import SideBar from "../components/ProductsPage/SideBar";
-import "../components/ProductsPage/Products.css"
+import "../components/ProductsPage/products.css"
 import ProductCate from "../components/ProductsPage/ProductCate"
 
 
