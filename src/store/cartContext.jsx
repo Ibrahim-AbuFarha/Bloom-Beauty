@@ -6,15 +6,15 @@ export default CartContext;
 
 export function CartProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
-  const [cartId, setCartId] = useState();
+  const [cartId, setCartId] = useState("");
 
   //get user object from local storage
   const user = JSON.parse(localStorage.getItem("user"));
   //to get the user id from local storage and set it for his cart
   useEffect(() => {
     // id from local storage
-    if (!user) return;
-
+    if (!user) return console.log("no user");
+    console.log(user);
     axios
       .get(`http://localhost:3001/carts?userId=${user.id}`)
       .then(({ data }) => {
@@ -25,6 +25,7 @@ export function CartProvider({ children }) {
 
   //add items to the cart
   const addItem = (product) => {
+    if (!user) return console.log("navigate to sign in page");
     let updatedCartItems;
     const isFound = cartItems.find((item) => {
       return item.id === product.id;
@@ -73,7 +74,6 @@ export function CartProvider({ children }) {
     }
   };
 
-  console.log(1);
   //remove item from cart
   const removeItem = (product) => {
     const deleteProduct = cartItems.filter((item) => {
@@ -130,8 +130,10 @@ export function CartProvider({ children }) {
     totalPrice,
     deleteAllItems,
     decreaseItem,
-    totalProducts
+    totalProducts,
   };
+
+  console.log(cartItems);
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 }

@@ -19,7 +19,7 @@
   
   .product-info h3 {
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 18px;
   }
   
   .quantity-controls {
@@ -31,9 +31,13 @@
   .quantity-controls button {
     margin: 0 5px;
     padding: 4px 8px;
-    border: 1px solid dodgerblue;
-    color: white;
-    background-color: #f5a3b7;
+   
+    color: var(--white);
+    background-color: var(--pink);
     border-radius: 5px;
     border: none;
+    width: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    
   }

@@ -1,25 +1,5 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-}
-:root {
-  --off-white: #fcfcff;
-  --gray: #8498af;
-  --blue-gray: #697586;
-  --white: #ffff;
-  --black: #383838;
-  --purple: #b0a6bd;
-  --pink: #f5a3b7;
-  --light-pink: #fee2e3;
-  --green: #7fccc6;
-  --red: #e77373;
-  --orange: #fdb64e;
-}
 .product-card {
-  box-shadow: 0 0 1px #383838;
+  box-shadow: 0 0 1px  var(--black);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   overflow: hidden;
@@ -53,11 +33,11 @@
   padding: 5px;
   font-weight: 500;
   background-color: transparent;
-  border: 2px #f5a3b7 solid;
+  border: 2px var(--pink) solid;
   transition: all 0.3s;
 }
 
 .product-card-button:hover {
-  background-color: #f5a3b7;
-  color: white;
+  background-color: var(--pink);
+  color: var(--white);
 }
