@@ -77,7 +77,7 @@ ul {
 .card-title {
   color: #000;
 }
-/*style best*/
+/* style best
 .product_card small,
 .product_card strong {
   display: block;
@@ -122,7 +122,7 @@ ul {
 
 .text-decoration-line-through {
   text-decoration: line-through;
-}
+} */
 .w-100 {
   /* background-size: cover; */
   /* width: 100%; */
@@ -134,4 +134,73 @@ ul {
   text-align: center;
   font-weight: 900;
   font-size: 3rem;
+}
+.best-seller-wrapper {
+  display: flex;
+
+  flex-wrap: wrap !important;
+  margin-top: 20px;
+  gap: 20px;
+}
+.best-seller-title {
+  text-align: center !important;
+  margin-top: 1.5rem;
+  font-weight: 600;
+}
+.see-all-btn {
+  text-align: right !important;
+  color: var(--blue-gray) !important;
+  margin-top: 0.2rem;
+  margin-right: 8rem;
+  cursor: pointer;
+}
+.see-all-btn:hover {
+  text-decoration: underline;
+  color: var(--pink);
+}
+.best-seller-card {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  /* position: relative; */
+}
+.best-seller-btn {
+  background-color: var(--white) !important;
+  box-shadow: inset !important;
+  border: 2px solid var(--black) !important;
+  margin-top: auto;
+  color: var(--black) !important;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  width: 70%;
+  margin: auto !important;
+  /* position: absolute; */
+  bottom: 20px;
+}
+.best-seller-btn:hover {
+  box-shadow: inset !important;
+  background: linear-gradient(
+    88.13deg,
+    #252525 -42.06%,
+    #3a3a3a 58.46%,
+    #323232 165.46%
+  ) !important;
+  border-radius: 4px !important;
+  color: var(--white) !important;
+}
+/* .best-seller-shop-btn {
+  background-color: var(--pink) !important;
+  box-shadow: inset !important;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+} */
+.allCate,
+.card-img-top {
+  margin: auto !important;
 }
