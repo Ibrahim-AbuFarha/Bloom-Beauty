@@ -1,128 +1,25 @@
-// export default function CarouselWrapper() {
-//   return (
-//     <>
-//       {/* <!-- Carousel wrapper --> */}
-//       <div
-//         id="carouselMaterialStyle"
-//         class="carousel slide carousel-fade"
-//         data-mdb-ride="carousel"
-//       >
-//         {/* <!-- Indicators --> */}
-//         <div class="carousel-indicators">
-//           <button
-//             type="button"
-//             data-mdb-target="#carouselMaterialStyle"
-//             data-mdb-slide-to="0"
-//             class="active"
-//             aria-current="true"
-//             aria-label="Slide 1"
-//           ></button>
-//           <button
-//             type="button"
-//             data-mdb-target="#carouselMaterialStyle"
-//             data-mdb-slide-to="1"
-//             aria-label="Slide 2"
-//           ></button>
-//           <button
-//             type="button"
-//             data-mdb-target="#carouselMaterialStyle"
-//             data-mdb-slide-to="2"
-//             aria-label="Slide 3"
-//           ></button>
-//         </div>
-
-//         {/* <!-- Inner --> */}
-//         <div class="carousel-inner rounded-5 shadow-4-strong">
-//           {/* <!-- Single item --> */}
-//           <div class="carousel-item active">
-//             <img
-//               src="https://images.squarespace-cdn.com/content/v1/51d151b1e4b05d425c859fc9/1568408056980-L575DPEBL27HY6LZ6KYH/Innisfree+Cherry+Blosom.JPG"
-//               class="d-block w-100"
-//               alt="Sunset Over the City"
-//             />
-//             <div class="carousel-caption d-none d-md-block">
-//               <h5>Discover your inner beauty with Blossom Glow Kit</h5>
-//               <p>Great gift for yourself and loved ones</p>
-//             </div>
-//           </div>
-
-//           {/* <!-- Single item --> */}
-//           <div class="carousel-item">
-//             <img
-//               src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp"
-//               class="d-block w-100"
-//               alt="Canyon at Nigh"
-//             />
-//             <div class="carousel-caption d-none d-md-block">
-//               <h5>Second slide label</h5>
-//               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-//             </div>
-//           </div>
-
-//           {/* <!-- Single item --> */}
-//           <div class="carousel-item">
-//             <img
-//               src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp"
-//               class="d-block w-100"
-//               alt="Cliff Above a Stormy Sea"
-//             />
-//             <div class="carousel-caption d-none d-md-block">
-//               <h5>Third slide label</h5>
-//               <p>
-//                 Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-//               </p>
-//             </div>
-//           </div>
-//         </div>
-//         {/* <!-- Inner --> */}
-
-//         {/* <!-- Controls --> */}
-//         <button
-//           class="carousel-control-prev"
-//           type="button"
-//           data-mdb-target="#carouselMaterialStyle"
-//           data-mdb-slide="prev"
-//         >
-//           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-//           <span class="visually-hidden">Previous</span>
-//         </button>
-//         <button
-//           class="carousel-control-next"
-//           type="button"
-//           data-mdb-target="#carouselMaterialStyle"
-//           data-mdb-slide="next"
-//         >
-//           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-//           <span class="visually-hidden">Next</span>
-//         </button>
-//       </div>
-//     </>
-//   );
-// }
-
-/////////////////////////
 import React from "react";
 import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
 import "./stylehome.css";
 export default function CarouselWrapper() {
   return (
-    <MDBCarousel showControls showIndicators dark fade>
+    <MDBCarousel showIndicators dark fade>
       <MDBCarouselItem
         className="w-100 d-block"
         itemId={1}
-        src="https://d3e7ardzpaj3y4.cloudfront.net/image/catalog%2Fapp_component%2F1685953635_undefined_81131346_celiawebsizeeng-1500x1500.png"
+        src="https://scontent.famm11-1.fna.fbcdn.net/v/t39.30808-6/285375166_5331214570232869_3427017445996586933_n.jpg?_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=973b4a&_nc_eui2=AeH35YGTTLkDXpfcMlEt78hI5Bu0B4RIeCDkG7QHhEh4IL4MYrcpHBlfwt3w0NE3hEJNBq30XJBnDY695wXXabH-&_nc_ohc=3yQ-tR1bhggAX9KT8Bi&_nc_ht=scontent.famm11-1.fna&oh=00_AfAISi3juLO38JLuFMxLxCnNjLL7PgO8r-JBJpgd4cbM-w&oe=649B39A7"
         alt="..."
       ></MDBCarouselItem>
       <MDBCarouselItem
         className="w-100 d-block"
         itemId={2}
-        src="https://d3e7ardzpaj3y4.cloudfront.net/image/catalog%2Fapp_component%2F1685358667_undefined_28069200_ftwebsizear-1500x1500.png"
+        src="https://scontent.famm11-1.fna.fbcdn.net/v/t1.6435-9/70599497_2724171837603835_2283777777939251200_n.jpg?_nc_cat=100&cb=99be929b-59f725be&ccb=1-7&_nc_sid=973b4a&_nc_eui2=AeEf2di9LjJvnDfGiajLsYRJf60Sh61L0NB_rRKHrUvQ0P4hTk99DKQEXKFHJTIGNd5B-7l5zfWH1J5UH8Mv1nKx&_nc_ohc=WRth9A-q000AX94YcES&_nc_ht=scontent.famm11-1.fna&oh=00_AfAdTeJQnkKvrHeptTIkOeh0KkrloL2h_7KTRvtlXixPdg&oe=64BD281E"
         alt="..."
       ></MDBCarouselItem>
       <MDBCarouselItem
         className="w-100 d-block"
         itemId={3}
-        src="https://d3e7ardzpaj3y4.cloudfront.net/image/catalog%2Fapp_component%2F1681205380_undefined_42966515_-Recovered-23-1500x1500.png"
+        src="https://scontent.famm11-1.fna.fbcdn.net/v/t1.6435-9/62426463_2401738443180511_8425750593707966464_n.jpg?_nc_cat=100&cb=99be929b-59f725be&ccb=1-7&_nc_sid=973b4a&_nc_eui2=AeFVypnLKN9qyfaub2e6YE3JYCvEwXCPLepgK8TBcI8t6ht_-4bVtAHpbYLBfXm75an5zDRvwLaUBUW_nwI3M2Re&_nc_ohc=pmOuyhLNIGoAX-kKlKM&_nc_oc=AQmGaCt3JJU62pMF-K6SW5AxLV-NJ6oSdOMzUoE6dTYDHThghvOq40uejLRYro-lwAQ&_nc_ht=scontent.famm11-1.fna&oh=00_AfDOD668xqufrPPHvLeXXo8SWkpAR9aOXDVPF0Vw0FoyyA&oe=64BD45DC"
         alt="..."
       ></MDBCarouselItem>
     </MDBCarousel>

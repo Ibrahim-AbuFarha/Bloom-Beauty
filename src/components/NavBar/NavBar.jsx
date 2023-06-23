@@ -26,7 +26,7 @@ function NavBar() {
             {/* <!-- Navbar brand --> */}
             <a className="navbar-brand mt-2 mt-lg-0" href="/#">
               <img
-                src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+                src="https://masterbundles.com/wp-content/uploads/2022/05/1-26.jpg"
                 height="15"
                 alt="MDB Logo"
                 loading="lazy"
