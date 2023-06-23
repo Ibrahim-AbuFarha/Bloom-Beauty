@@ -6,7 +6,9 @@
 // import ProductsPage from "./components/ProductsPage/ProductsPage";
 import HomePage from "./Pages/HomePage";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ProductsPage from "./Pages/ProductsPage"
+import ProductsPage from "./Pages/ProductsPage";
+import ProductPage from "./Pages/ProductPage";
+import ProductSlider from "./components/productDetails/ProductSlider";
 
 // import SignIn from "./components/SingIp/SignIn";
 // import SignUp from "./components/SignUp/SignUp";
@@ -16,8 +18,9 @@ import ProductsPage from "./Pages/ProductsPage"
 function App() {
   return (
     <div>
-      <ProductsPage />
       <HomePage />
+      {/* <ProductPage /> */}
+      {/* <ProductsPage /> */}
     </div>
   );
 }
