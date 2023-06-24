@@ -11,7 +11,7 @@
 // import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
 // import ProfileSection from "./Pages/ProfileSection";
-// import ProductsPage from "./components/ProductsPage/ProductsPage";
+import ProductsPage from "./Pages/ProductsPage";
 // import HomePage from "./Pages/HomePage";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import ProductsPage from "./Pages/ProductsPage";
@@ -26,7 +26,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      {/* <ProductsPage /> */}
+      <ProductsPage />
       {/* <HomePage />  */}
       
     </div>

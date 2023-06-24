@@ -28,7 +28,7 @@ function ProductCate() {
   };
   //Fetch Data:
   useEffect(() => {
-    fetch(
+    fetch(   
       "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
     )
       .then((Response) => Response.json())
@@ -83,6 +83,7 @@ function ProductCate() {
               Prev
             </a>
           </li>
+
           {numbers.map((n, i) => {
             return (
               <li

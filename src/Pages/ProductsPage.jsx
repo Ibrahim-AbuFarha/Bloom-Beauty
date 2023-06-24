@@ -9,9 +9,7 @@ import Rate from "../components/ProductsPage/Rate";
 export default function ProductsPage() {
   return (
     <>
-    <NavBar /> 
     <ProductCate />
-      
       {/* <Card /> */}
       {/* <SideBar /> */}
       
