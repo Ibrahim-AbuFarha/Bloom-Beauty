@@ -4,7 +4,6 @@ import SignUp from "./components/SignUp/SignUp";
 // import SignIn from "./components/SingIp/SignIn"; 
 import NavBar from "./components/NavBar/NavBar"
 import SignIn from "./components/SingIp/SignIn";
-import AuthPage from "./Pages/AuthPage";
 
 // import SignUp from "./components/SignUp/SignUp";
 // import ProductPage from "./Pages/ProductPage";
