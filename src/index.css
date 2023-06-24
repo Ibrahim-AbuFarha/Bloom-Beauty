@@ -26,18 +26,16 @@
   margin-inline: auto;
 }
 
-/* .nav-link {
+ .nav-link {
   color: #fff !important;
 }
-.bg-dark {
+.navbar-edit {
   background-color: #000 !important;
 }
-.bg-dark:hover {
+.navbar-edit:hover {
   background-color: #000 !important;
-} */
-/* .logout {
-  /* border-radius: 12px; */
-  /* background: #272a34 !important; */
-
-  /* box-shadow: 10px 10px 30px 0px rgba(26, 40, 62, 0.1); 
-} */ 
+}
+.logout {
+  border-radius: 12px;
+  background: #272a34 !important;
+}
