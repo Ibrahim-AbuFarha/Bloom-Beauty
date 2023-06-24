@@ -1,45 +1,31 @@
-import { MDBContainer } from "mdb-react-ui-kit";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
-// export default function Youtube() {
-//   return (
-//     <MDBContainer>
-//       <div className="ratio ratio-16x9">
-//         <iframe
-//           style={{ height: "350" }}
-//           src="https://www.youtube.com/watch?v=dmSCJ8eIB3c"
-//           title="YouTube video"
-//           allowfullscreen
-//         ></iframe>
-//       </div>
-//     </MDBContainer>
-//   );
-// }
-// import YouTube from "react-youtube";
+const YouTubePlayer = ({ apiKey, videoId }) => {
+  const [videoUrl, setVideoUrl] = useState("");
 
-// export default function Youtube() {
-//   const videoId = "https://www.youtube.com/watch?v=DrJKf86XDLE";
+  useEffect(() => {
+    const fetchVideoUrl = async () => {
+      try {
+        const response = await axios.get(
+          `https://www.googleapis.com/youtube/v3/videos?part=player&id=${videoId}&key=${apiKey}`
+        );
+        const { data } = response;
+        const videoUrl = data.items[0].player.embedHtml;
+        setVideoUrl(videoUrl);
+      } catch (error) {
+        console.error("Error fetching YouTube video:", error);
+      }
+    };
 
-//   return (
-//     <div>
-//       {console.log(videoId)}
-//       <YouTube videoId={videoId} />
-//     </div>
-//   );
-// }
-//
-export default function YouTube() {
+    fetchVideoUrl();
+  }, [apiKey, videoId]);
+
   return (
-    <section className="youtube-section">
-      <iframe
-        width="660"
-        height="315"
-        src="https://www.youtube.com/watch?v=MTgeUVOxl8E"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </section>
+    <div className="hero-section ">
+      {videoUrl && <div dangerouslySetInnerHTML={{ __html: videoUrl }} />}
+    </div>
   );
-}
+};
+
+export default YouTubePlayer;
