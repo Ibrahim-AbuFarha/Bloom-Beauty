@@ -24,6 +24,7 @@
   border-radius: 5px;
   overflow: hidden;
   height: 450px;
+  width: 300px;
 }
 
 .product-card-img img {

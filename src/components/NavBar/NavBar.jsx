@@ -24,10 +24,12 @@ function NavBar() {
       {/* <!-- Navbar brand --> */}
       <a className="navbar-brand mt-2 mt-lg-0" href="/#">
         <img
-          src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6v83n1xQdN4nMtmDTmkMVDhR3y1EeeJDyuwp5SCz6kY1wFqGKY5QzKLMXRu-bJw4aBc0&usqp=CAU"
+
           height="15"
           alt="MDB Logo"
           loading="lazy"
+          style={{width : 80 , height : 50}}
         />
       </a>
       {/* <!-- Left links --> */}
@@ -63,8 +65,8 @@ function NavBar() {
           data-mdb-toggle="dropdown"
           aria-expanded="false"
         >
-          <i className="fas fa-bell"></i>
-          <span className="badge rounded-pill badge-notification bg-danger">1</span>
+          {/* <i className="fas fa-bell"></i> */}
+          {/* <span className="badge rounded-pill badge-notification bg-danger">1</span> */}
         </a>
         <ul
           className="dropdown-menu dropdown-menu-end"
