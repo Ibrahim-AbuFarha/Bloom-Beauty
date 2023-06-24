@@ -11,7 +11,7 @@ function Testimonials() {
         <div class="container">
           <div class="intro">
             <h2 class="text-center">Testimonials </h2>
-            <p class="text-center">
+            <p class="text-center testimonials-des">
               Our customers love us💟! Read what they have to say below. Aliquam
               sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet
               vitae.
@@ -19,17 +19,17 @@ function Testimonials() {
           </div>
           <div className="row people">
             <CardTestimonials
-              name={faker.person.fullName()}
+              name="Haneen Emad"
               avatar={faker.image.avatar()}
               text="Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est."
             />
             <CardTestimonials
-              name={faker.person.fullName()}
+              name="Sarah Ahamed"
               avatar={faker.image.avatar()}
               text="Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id."
             />
             <CardTestimonials
-              name={faker.person.fullName()}
+              name="Maha Zaid"
               avatar={faker.image.avatar()}
               text="Aliquam varius finibus est, et interdum justo suscipit. Vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu."
             />

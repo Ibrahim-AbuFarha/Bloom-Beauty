@@ -1,17 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Arapey&family=Roboto+Slab&display=swap");
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  font-family: "Arapey", serif;
+}
 .testimonials-clean {
   color: #313437;
-  background-color: #eef4f7;
+  background-color: #2222;
 }
 
 .testimonials-clean p {
-  color: #7d8285;
+  color: #111;
 }
-
+.testimonials-des {
+  color: #fff !important;
+}
 .testimonials-clean h2 {
   font-weight: bold;
   margin-bottom: 40px;
   padding-top: 40px;
-  color: inherit;
+  color: #fff;
+  font-family: "Arapey", serif;
 }
 
 @media (max-width: 767px) {
@@ -72,7 +83,7 @@
 .testimonials-clean .item .name {
   font-weight: bold;
   margin-bottom: 2px;
-  color: inherit;
+  color: #fff;
 }
 
 .testimonials-clean .item .title {

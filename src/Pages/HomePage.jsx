@@ -11,14 +11,18 @@ import OurTeam from "../components/HomePage/OurTeam";
 export default function HomePage() {
   // const apiKey = "AIzaSyCpBrKkjRQ9mk8TpnPjFN5q4WLdNVREFBQ";
   const videoId = "nWTHaG0Wpfg";
+
+  const apiKey = "AIzaSyCpBrKkjRQ9mk8TpnPjFN5q4WLdNVREFBQ";
+
   return (
     <CartProvider>
       <CarouselWrapper />
 
       {/* <BestSellerWrapper /> */}
+
       <CardsDark />
       <OurTeam />
-      <YoutubeSection videoId={videoId} />
+      <YoutubeSection videoId={videoId} apiKey={apiKey} />
       <Testimonials />
     </CartProvider>
   );
