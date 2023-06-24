@@ -28,31 +28,33 @@ function SignIn() {
   };
 
   return (
-    <section className="container-">
-      <h1> SignUp</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          className="email"
-          type="email"
-          onChange={(e) => setEmail(e.target.value)}
-          required
-          placeholder="Email"
-        />
-        <input
-          className="password"
-          type="password"
-          onChange={(e) => setPassword(e.target.value)}
-          required
-          placeholder="Password"
-        ></input>
+    <section className="containerOfContainer">
+      <section className="container-">
+        <h1 className="h1-"> SignUp</h1>
+        <form className="form-" onSubmit={handleSubmit}>
+          <input
+            className="email input-"
+            type="email"
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            placeholder="Email"
+          />
+          <input
+            className="password input-"
+            type="password"
+            onChange={(e) => setPassword(e.target.value)}
+            required
+            placeholder="Password"
+          ></input>
 
-        <div className="er"> {err && <p>email or user is not valid</p>}</div>
-        <button className="button">Submit</button>
+          <div className="er"> {err && <p>email or user is not valid</p>}</div>
+          <button className="button">Submit</button>
 
-        <div className="word-">
-          I  don't have an account  <a href="">Sign Up</a>
-        </div>
-      </form>
+          <div className="word-">
+            I don't have an account <a href="">Sign Up</a>
+          </div>
+        </form>
+      </section>
     </section>
   );
 }
