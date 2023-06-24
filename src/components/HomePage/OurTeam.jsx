@@ -2,11 +2,11 @@ import React from "react";
 import "./OurTeam.css";
 function OurTeam() {
   return (
-    <>
-      <div className="container py-5">
+    <div className="bg-black">
+      <div className="container bg-black py-5">
         <div className="row text-center text-white">
           <div className="col-lg-8 mx-auto">
-            <h1 className="display-4">Team Page</h1>
+            <h1 className="display-4">Our Team</h1>
             <p className="lead mb-0">
               Using Bootstrap 4 grid and utilities, create a nice team page.
             </p>
@@ -223,7 +223,7 @@ function OurTeam() {
           {/* <!-- End --> */}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

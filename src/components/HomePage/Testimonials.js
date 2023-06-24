@@ -8,9 +8,9 @@ function Testimonials() {
   return (
     <>
       <div class="testimonials-clean">
-        <div class="container">
+        <div class="container bd-dark">
           <div class="intro">
-            <h2 class="text-center">Testimonials </h2>
+            <h1 class="text-center">Testimonials </h1>
             <p class="text-center testimonials-des">
               Our customers love us💟! Read what they have to say below. Aliquam
               sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet

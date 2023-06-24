@@ -23,7 +23,7 @@ body {
 #pageHeaderTitle {
   margin: 2rem 0;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   font-size: 2.5rem;
 }
 
@@ -55,7 +55,7 @@ body {
   font-size: 80%;
 }
 .postcard .postcard__title {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 .postcard .postcard__img {
   max-height: 180px;
