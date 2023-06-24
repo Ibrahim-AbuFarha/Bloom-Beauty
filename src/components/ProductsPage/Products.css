@@ -153,12 +153,9 @@
   color: var(--pink);
 }
 
-<<<<<<< HEAD
-.active {
-  background-color: rgb(222 197 203);
-=======
 .active1 {
-  background-color: rgb(194, 129, 144);
+  /* background-color: var(--pink); */
+  text-decoration: underline;
 }
 
 /* Card Component Styling */
