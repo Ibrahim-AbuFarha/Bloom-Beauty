@@ -48,7 +48,7 @@ function CardTestimonials({ name, avatar, text }) {
         <p className="description">{text}</p>
       </div>
       <div className="author">
-        <img className="rounded-circle" src={avatar} />
+        <img className="rounded-circle" src={avatar} alt="avatar photo" />
         <h5 className="name">{name}</h5>
       </div>
     </div>
