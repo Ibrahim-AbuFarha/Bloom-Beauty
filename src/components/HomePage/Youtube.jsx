@@ -22,7 +22,7 @@ const YouTubePlayer = ({ apiKey, videoId }) => {
   }, [apiKey, videoId]);
 
   return (
-    <div className="hero-section ">
+    <div className="youtube-section ">
       {videoUrl && <div dangerouslySetInnerHTML={{ __html: videoUrl }} />}
     </div>
   );

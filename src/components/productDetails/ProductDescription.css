@@ -17,6 +17,9 @@
 .product-price {
   font-weight: 500;
 }
+.product-price{
+  margin-top: 10px;
+}
 .product-subDesc {
   color: var(--blue-gray);
 }

@@ -2,11 +2,11 @@ import React from "react";
 import "./OurTeam.css";
 function OurTeam() {
   return (
-    <>
-      <div className="container py-5">
+    <div className="bg-black">
+      <div className="container bg-black py-5">
         <div className="row text-center text-white">
           <div className="col-lg-8 mx-auto">
-            <h1 className="display-4">Team Page</h1>
+            <h1 className="display-4">Our Team</h1>
             <p className="lead mb-0">
               Using Bootstrap 4 grid and utilities, create a nice team page.
             </p>
@@ -30,9 +30,10 @@ function OurTeam() {
           <div className="col-xl-3 col-sm-6  mb-5">
             <div className="bg-white rounded  text-light  shadow-sm py-5 px-4">
               <img
-                src="../images/download.png"
+                src="https://cdn.discordapp.com/attachments/1114900049890119684/1122169591997673472/Untitled_design_7.png"
                 alt=""
                 width="100"
+                height="100"
                 className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
               />
               <h5 className="mb-0 full-name">Bayan Ghabin</h5>
@@ -69,9 +70,10 @@ function OurTeam() {
           <div className="col-xl-3 col-sm-6 mb-5">
             <div className="bg-light  rounded shadow-sm py-5 px-4">
               <img
-                src=""
+                src="https://cdn.discordapp.com/attachments/1114900049890119684/1122169593872527421/Untitled_design_1.png"
                 alt=""
                 width="100"
+                height="100"
                 class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
               />
               <h5 class="mb-0 full-name">Amer Naser</h5>
@@ -106,9 +108,10 @@ function OurTeam() {
           <div className="col-xl-3 col-sm-6 mb-5">
             <div class="bg-white rounded shadow-sm py-5 px-4">
               <img
-                src="https://bootstrapious.com/i/snippets/sn-team/teacher-1.jpg"
+                src="https://cdn.discordapp.com/attachments/1114900049890119684/1122169592584876132/Untitled_design_3.png"
                 alt=""
                 width="100"
+                height="100"
                 class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
               />
               <h5 class="mb-0 full-name">Mohammad Awad</h5>
@@ -146,9 +149,10 @@ function OurTeam() {
           <div className="col-xl-3 col-sm-6 mb-5">
             <div className="bg-white rounded shadow-sm py-5 px-4">
               <img
-                src="https://bootstrapious.com/i/snippets/sn-team/teacher-7.jpg"
+                src="https://cdn.discordapp.com/attachments/1114900049890119684/1122169592584876132/Untitled_design_3.png"
                 alt=""
                 width="100"
+                height="100"
                 className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
               />
               <h5 className="mb-0 full-name">Abdulraof Mattur</h5>
@@ -182,9 +186,10 @@ function OurTeam() {
           <div className="col-xl-3 col-sm-6 mb-5">
             <div className="bg-white rounded shadow-sm py-5 px-4">
               <img
-                src="https://bootstrapious.com/i/snippets/sn-team/teacher-7.jpg"
+                src="https://cdn.discordapp.com/attachments/1114900049890119684/1122169593578934343/Untitled_design_2.png"
                 alt=""
                 width="100"
+                height="100"
                 className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
               />
               <h5 className="mb-0 full-name">Ibrahim Abufarha</h5>
@@ -218,7 +223,7 @@ function OurTeam() {
           {/* <!-- End --> */}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

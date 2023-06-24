@@ -20,24 +20,30 @@
   --red: #e77373;
   --orange: #fdb64e;
 }
-/* 
+
 .container {
   max-width: 1280px;
   margin-inline: auto;
+}
+.logo {
+  font-family: "Arapey", serif;
+}
+.nav-wrapper {
+  max-width: 1280px;
+  margin-inline: auto;
+  height: 60px !important;
 }
 
 .nav-link {
   color: #fff !important;
 }
-.bg-dark {
+.navbar-edit {
   background-color: #000 !important;
 }
-.bg-dark:hover {
+.navbar-edit:hover {
   background-color: #000 !important;
-} */
-/* .logout {
-  /* border-radius: 12px; */
-  /* background: #272a34 !important; */
-
-  /* box-shadow: 10px 10px 30px 0px rgba(26, 40, 62, 0.1); 
-} */
+}
+.logout {
+  border-radius: 12px;
+  background: #272a34 !important;
+}

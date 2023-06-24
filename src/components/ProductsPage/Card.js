@@ -20,7 +20,7 @@ function Card() {
             </p>
             <Rate />
         </div>
-        <button className="btn">Add to card</button>
+        <button className="btn11">Add to card</button>
       </div>
     </>
   );

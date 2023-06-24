@@ -20,16 +20,16 @@
 }
 
 /* NavBar */ 
-.btn {
+.btn11 {
   background-color: rgb(247, 202, 223);
   border: none;
 }
 
-.btn:hover {
+.btn11:hover {
   background-color: var(--pink);
 }
 
-.btn:focus {
+.btn11:focus {
   background-color: var(--red);
 }
 
@@ -55,7 +55,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.filter:active {
+.filter:active1 {
   border: 1px solid rgb(193, 188, 188);
 }
 
@@ -141,7 +141,7 @@
   cursor: pointer;
 }
 
-.PageInation > .Page-item {
+.PageInation > .Page-item1 {
 
   display: flex;
   justify-content: center;
@@ -152,17 +152,22 @@
   font-weight: 500;
   height: 100%;
 }
-.PageInation > .Page-item:hover {
+.PageInation > .Page-item1:hover {
     background-color: rgb(254, 186, 195, 0.5);
     
 }
 
-.PageInation > .Page-item > a {
+.PageInation > .Page-item1 > a {
     color: rgb(182 101 121);
 }
 
+<<<<<<< HEAD
 .active {
   background-color: rgb(222 197 203);
+=======
+.active1 {
+  background-color: rgb(194, 129, 144);
+>>>>>>> b42da114c784589e3f1719e937ab856362153b14
 }
 
 
@@ -204,7 +209,7 @@
   font-size: 1.1em;
 }
 
-.btn {
+.btn11 {
   width: 70%;
   text-align: center;
   /* position: absolute; */
