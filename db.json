@@ -15,7 +15,22 @@
   "carts": [
     {
       "userId": 1,
-      "cartItems": [],
+      "cartItems": [
+        {
+          "name": "Maybelline Face Studio Master Hi-Light Light Booster Bronzer",
+          "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/991799d3e70b8856686979f8ff6dcfe0_ra,w158,h184_pa,w158,h184.png",
+          "quantity": 1,
+          "price": "14.99",
+          "id": 495
+        },
+        {
+          "name": "Maybelline Facestudio Master Contour Kit",
+          "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/4f731de249cbd4cb819ea7f5f4cfb5c3_ra,w158,h184_pa,w158,h184.png",
+          "quantity": 1,
+          "price": "15.99",
+          "id": 477
+        }
+      ],
       "id": 1
     }
   ],
