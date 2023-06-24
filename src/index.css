@@ -25,8 +25,15 @@
   max-width: 1280px;
   margin-inline: auto;
 }
+.logo {
+  font-family: "Arapey", serif;
+}
+.nav-wrapper {
+  max-width: 1280px;
+  margin-inline: auto;
+}
 
- .nav-link {
+.nav-link {
   color: #fff !important;
 }
 .navbar-edit {
