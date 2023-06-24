@@ -1,31 +1,18 @@
-<<<<<<< HEAD
 import ProductPage from "./Pages/ProductPage";
 import CartPage from "./Pages/CartPage";
 import SignUp from "./components/SignUp/SignUp";
 import Cart from "./components/cart/Cart";
 import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
-<<<<<<< HEAD
-// import ProfileSection from "./Pages/ProfileSection";
-import ProductsPage from "./Pages/ProductsPage";
-// import HomePage from "./Pages/HomePage";
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import ProductsPage from "./Pages/ProductsPage";
-
-// import SignIn from "./components/SingIp/SignIn";
-// import SignUp from "./components/SignUp/SignUp";
-// import ProductDetailsPage from "./Pages/ProductDetailsPage";
-=======
 import ProfileSection from "./Pages/ProfileSection";
 import ProductsPage from "./Pages/ProductsPage";
 import HomePage from "./Pages/HomePage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignIn from "./components/SingIp/SignIn";
 import ProductDetailsPage from "./Pages/ProductDetailsPage";
->>>>>>> b42da114c784589e3f1719e937ab856362153b14
 
 // axios.post('localhost:3001/users',{name , password , email , })
-=======
+
 import SignIn from "./components/SingIp/SignIn";
 import SignUp from "./components/SignUp/SignUp";
 import HomePage from "./Pages/HomePage";
@@ -36,24 +23,16 @@ import ProfileSection from "./Pages/ProfileSection";
 //for footer and header for all pages (fixed ) use mainLayout
 import MainLayout from "./Pages/MainLayout";
 import { Routes, Route } from "react-router-dom";
->>>>>>> 5ac5f09c537da1000670cc87753d385f79c83e15
 
 function App() {
   return (
     <div>
-<<<<<<< HEAD
       <NavBar />
-<<<<<<< HEAD
+      <SignIn />
+      <SignUp />
       <ProductsPage />
-      {/* <HomePage />  */}
-=======
-      <SignIn/>
-      <SignUp/>
-      <ProductsPage /> 
-       <HomePage /> 
->>>>>>> b42da114c784589e3f1719e937ab856362153b14
-      
-=======
+      <HomePage />
+
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/product/:id" element={<ProductDetailsPage />} />
@@ -65,7 +44,6 @@ function App() {
           <Route path="/SignUp" element={<SignUp />} />
         </Route>
       </Routes>
->>>>>>> 5ac5f09c537da1000670cc87753d385f79c83e15
     </div>
   );
 }
