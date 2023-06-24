@@ -43,9 +43,9 @@ ul {
   margin: auto;
 }
 
-.fa {
+/* .fa {
   color: #f2dd1d;
-}
+} */
 
 .card-img-top {
   width: 90%;
@@ -73,7 +73,7 @@ ul {
 }
 
 .w-100 {
-  height: 600px;
+  /* height: 600px; */
   background-size: cover;
 }
 

@@ -2,6 +2,8 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./SignIn.css"
+
 function SignIn() {
   const navigate = useNavigate();
   const [email, setEmail] = useState();
@@ -25,16 +27,37 @@ function SignIn() {
       // navigate to new page
     } catch (err) {
       console.log(err);
+      setError("email or user is not valid");
     }
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" onChange={(e) => setEmail(e.target.value)} />
-      <input type="text" onChange={(e) => setPassword(e.target.value)} />
-      {err && <p>email or user is not valid</p>}
-      <button>Submit</button>
-    </form>
+    <section className="container">
+      <h1> SignUp</h1>
+      <form onSubmit={handleSubmit}>
+        <input
+          className="email"
+          type="email"
+          onChange={(e) => setEmail(e.target.value)}
+          required
+          placeholder="Email"
+        />
+        <input
+          className="password"
+          type="password"
+          onChange={(e) => setPassword(e.target.value)}
+          required
+          placeholder="Password"
+        ></input>
+
+        <div className="er"> {err && <p>email or user is not valid</p>}</div>
+        <button className="button">Submit</button>
+
+        <div className="word-">
+          I  don't have an account  <a href="">Sign Up</a>
+        </div>
+      </form>
+    </section>
   );
 }
 

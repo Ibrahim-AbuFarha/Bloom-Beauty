@@ -14,9 +14,6 @@ function BestSellerWrapper() {
       .then((data) => {
         setItems(data);
       });
-    // let arr = [];
-
-    // console.log(Response);
   }, []);
   return (
     <>
