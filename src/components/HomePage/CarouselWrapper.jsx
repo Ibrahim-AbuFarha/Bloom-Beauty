@@ -1,7 +1,12 @@
 import React from "react";
 import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
 import "./stylehome.css";
+import { useNavigate } from "react-router-dom";
 export default function CarouselWrapper() {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/products");
+  };
   return (
     <div id=" carouselExample" className="carousel slide landing-hero">
       <div className="carousel-inner">
@@ -16,6 +21,7 @@ export default function CarouselWrapper() {
       <button
         type="button"
         class="btn fw-bold shop-now-btn float-right btn-light"
+        onClick={handleClick}
       >
         SHOP NOW
       </button>

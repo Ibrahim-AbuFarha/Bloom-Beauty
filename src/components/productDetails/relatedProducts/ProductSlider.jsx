@@ -44,14 +44,14 @@ function ProductSlider({ products }) {
           disabledClass: "swiper-button-disabled",
         }}
       >
-        {products.map((product) => (
-          <SwiperSlide>
+        {products.map((product,indx) => (
+          <SwiperSlide key={indx}>
             <ProductCard product={product} />
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="swiper-button-prev">{'<'}</div>
-      <div className="swiper-button-next">{'>'}</div>
+      <div className="swiper-button-prev">{'◀'}</div>
+      <div className="swiper-button-next">{'▶'}</div>
     </div>
   );
 }

@@ -1,15 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 // import CardPro from "./CardPro";
-import Rate from "./Rate"
-
+import Rate from "./Rate";
+import { Link } from "react-router-dom";
+import CartContext from "../../store/cartContext";
 function ProductCate() {
   const [proArr, setProArr] = useState([]);
   const [currentPage, setCurrentPage] = useState(1); // state of the pageInation
-  const [query , setQuery] = useState("")
-
-
-  
-
+  const [query, setQuery] = useState("");
+  const { addItem } = useContext(CartContext);
 
   //Pageination :
   const changeCPage = (id) => {
@@ -34,13 +32,13 @@ function ProductCate() {
       .then((Response) => Response.json())
       .then((data) => setProArr(data));
   }, []);
+//teeeeeeeeeeeeeeeeeeeeeeeeeeeeeeest
 
-
-
+//teeeeeeeeeeeeeeeeeeeeeeeeeeeeeeest
   //Filter Function :
   const handleChange = (e) => {
-    setQuery(e.target.value) 
-  }
+    setQuery(e.target.value);
+  };
 
   const recordsPerPage = 24; // state for # of Cards each page
   const lastIndex = currentPage * recordsPerPage;
@@ -50,31 +48,55 @@ function ProductCate() {
   const numbers = [...Array(nPages + 1).keys()].slice(1);
 
   //Maping on the Array :
-  // بدنا نطبع العدد يلي عملنا اله سلايس 
-  const AllProducts = records.filter((el) => {return (el.name.toLowerCase().includes(query))}).map((item) => {
-    return (
-      <div key={item.id} className="product-card">
-        <div className="product-card-img">
-          <img src={item.image_link} alt="" />
+  // بدنا نطبع العدد يلي عملنا اله سلايس
+  const AllProducts = records
+    .filter((el) => {
+      return el.name.toLowerCase().includes(query);
+    })
+    .map((item) => {
+      return (
+        <div key={item.id} className="product-card">
+          <Link to={`/product/${item.id}`}>
+            <div className="product-card-img">
+              <img src={item.image_link} alt="" />
+            </div>
+          </Link>
+          <div className="product-card-desc">
+            <h5 className="product-card-title">{item.name}</h5>
+            <p className="product-card-stars"></p>
+            <p className="product-card-price">{item.price}$</p>
+            <Rate />
+            <button
+              className="product-card-button"
+              onClick={() =>
+                addItem({
+                  name: item.name,
+                  image: item.image_link,
+                  quantity: 1,
+                  price: item.price,
+                  id: item.id,
+                })
+              }
+            >
+              Add To Cart
+            </button>
+          </div>
         </div>
-        <div className="product-card-desc">
-          <h5 className="product-card-title">{item.name}</h5>
-          <p className="product-card-stars"></p>
-          <p className="product-card-price">{item.price}$</p>
-          <Rate/> 
-          <button className="product-card-button">Add To Cart</button>
-        </div>
-      </div>
-    );
-  });
+      );
+    });
 
   //Return for component :
   return (
     //Filter Input :
     <section className="allCate" style={{ paddingLeft: "1em" }}>
-      <input   className="filter" type="text" placeholder="Search..."  onChange={handleChange}/>
+      <input
+        className="filter"
+        type="text"
+        placeholder="Search..."
+        onChange={handleChange}
+      />
       <div className="grid">{AllProducts}</div>
-      
+
       {/* NavBar PageInation */}
       <div className="navPageinations">
         <ul className="PageInation">
@@ -138,4 +160,3 @@ export default ProductCate;
       </div>
     </div>
 */
-

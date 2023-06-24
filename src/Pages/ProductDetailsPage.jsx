@@ -18,6 +18,7 @@ function ProductPage() {
       })
       .catch((err) => console.log(err));
   }, [id]);
+  console.log(product)
   //product?.brand means if product exist give me his brand
   return (
     <CartProvider>

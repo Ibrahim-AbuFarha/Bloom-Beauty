@@ -72,7 +72,7 @@ const Cart = () => {
         <div>
           <div className="pop-up">
             <p>Your order has been submitted.</p>
-            <button onClick={()=>navigate('/Home')}>Ok!</button>
+            <button onClick={()=>navigate('/')}>Ok!</button>
           </div>
           <div class="popup-overlay"></div>
         </div>

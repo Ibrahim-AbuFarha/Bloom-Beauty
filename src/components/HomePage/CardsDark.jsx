@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./CardDark.css";
-
+import { Link } from "react-router-dom";
 function CardsDark() {
   const [items, setItems] = useState([]);
 
@@ -24,17 +24,20 @@ function CardsDark() {
             return (
               <article className="postcard dark blue">
                 <a className="postcard__img_link" href="#">
-                  <img
-                    className="postcard__img"
-                    src={item.image_link}
-                    alt="Image Title"
-                  />
+                  <Link to={`/product/${item.id}`}>
+                    <img
+                      className="postcard__img"
+                      src={item.image_link}
+                      alt="Image Title"
+                    />
+                  </Link>
                 </a>
                 <div className="postcard__text">
-                  <h1 className="postcard__title blue">
-                    <a href="#">{item.name}</a>
-                  </h1>
-
+                  <Link to={`/product/${item.id}`}>
+                    <h1 className="postcard__title blue">
+                      <a href="#">{item.name}</a>
+                    </h1>
+                  </Link>
                   <div className="postcard__bar" />
                   <div className="postcard__preview-txt">
                     {item.description}

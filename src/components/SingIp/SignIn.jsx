@@ -2,8 +2,8 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./SignIn.css"
-
+import "./SignIn.css";
+import { Link } from "react-router-dom";
 function SignIn() {
   const navigate = useNavigate();
   const [email, setEmail] = useState();
@@ -12,7 +12,7 @@ function SignIn() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // get  the current user 
+    // get  the current user
     try {
       const { data: user } = await axios.get(
         `http://localhost:3001/users?email=${email}&password=${password}`
@@ -20,10 +20,10 @@ function SignIn() {
 
       if (user.length === 0) return setError(true);
 
-      // save the user in local storage 
-      localStorage.setItem("user", JSON.stringify(user[0]));// user[0] is an object{}
+      // save the user in local storage
+      localStorage.setItem("user", JSON.stringify(user[0])); // user[0] is an object{}
       console.log(user);
-      navigate("/home");
+      navigate("/");
       // navigate to new page
     } catch (err) {
       console.log(err);
@@ -32,31 +32,36 @@ function SignIn() {
   };
 
   return (
-    <section className="container-">
-      <h1> SignUp</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          className="email"
-          type="email"
-          onChange={(e) => setEmail(e.target.value)}
-          required
-          placeholder="Email"
-        />
-        <input
-          className="password"
-          type="password"
-          onChange={(e) => setPassword(e.target.value)}
-          required
-          placeholder="Password"
-        ></input>
+    <section className="containerOfContainer">
+      <section className="container-">
+        <h1> SignIn</h1>
+        <form className="signIn-form" onSubmit={handleSubmit}>
+          <input
+            className="email"
+            type="email"
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            placeholder="Email"
+          />
+          <input
+            className="password"
+            type="password"
+            onChange={(e) => setPassword(e.target.value)}
+            required
+            placeholder="Password"
+          ></input>
 
-        <div className="er"> {err && <p>email or user is not valid</p>}</div>
-        <button className="button">Submit</button>
+          <div className="er"> {err && <p>email or user is not valid</p>}</div>
+          <button className="signInButton ">Submit</button>
 
-        <div className="word-">
-          I  don't have an account  <a href="">Sign Up</a>
-        </div>
-      </form>
+          <div className="word-">
+            Don't have an account ?{" "}
+            <Link to={"/signUp"}>
+              <span className="haveA-signIn">Sign Up</span>
+            </Link>
+          </div>
+        </form>
+      </section>
     </section>
   );
 }

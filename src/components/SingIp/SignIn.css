@@ -12,17 +12,26 @@
     align-items: center;
     margin-top: 100px;
 } 
+.containerOfContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222222;
+    
+  }
 
-form {
+  .signIn-form {
     width: 100%;
     display: grid;
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, auto);
-    background-color: white;
+    background-color: #222222;
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .password {
@@ -38,7 +47,7 @@ grid-column: 1/13;
 }
 
 
-.button {
+.signInButton {
     grid-column: 4/10;
     grid-row: 4/5;
     background-color: #F5A3B7;
@@ -54,17 +63,21 @@ grid-column: 1/13;
     grid-column: 1/13;
     grid-row: 5/6;
     text-align: center;
+    color: var(--white);
 }
 input {
     background-color: white;
     border: solid #DFE1E3 3px;
     border-radius: 5px;
-
+    padding:5px;
+    font-size: 10px;
 }
-
-.error {
+.haveA-signIn{
+    color: #f5a3b7;
+}
+.er {
     color: red;
-    font-size: 12px;
+    font-size: 18px;
     margin-top: 5px;
 }
 

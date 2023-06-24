@@ -3,8 +3,11 @@ import "./profile.css";
 import axios from "axios";
 
 function Profile() {
+  const [userInfo, SetUserInfo] = useState([]);
   const [orders, setOrders] = useState([]);
+
   const user = JSON.parse(localStorage.getItem("user"));
+
   useEffect(() => {
     axios
       .get(`http://localhost:3001/orders?userId=${user.id}`)
@@ -13,6 +16,8 @@ function Profile() {
       })
       .catch((err) => console.log(err));
   }, []);
+  console.log(user);
+
   console.log(orders);
   const one = require("./img/one.jpg");
   const two = require("./img/two.jpg");
@@ -30,9 +35,9 @@ function Profile() {
                     className="rounded-circle img-fluid"
                     style={{ width: "150px" }}
                   />
-                  <h5 className="my-3">Abdulraof Mattur</h5>
-                  <p className="text-muted mb-1">Full Stack Developer</p>
-                  <p className="text-muted mb-4">Amman, Jordan</p>
+                  <h5 className="my-3">{user.username}</h5>
+                  {/* <p className="text-muted mb-1">Full Stack Developer</p> */}
+                  <p className="text-muted mb-4">{`${user.city},${user.country}`}</p>
                 </div>
               </div>
             </div>
@@ -44,7 +49,7 @@ function Profile() {
                       <p className="mb-0">Full Name</p>
                     </div>
                     <div className="col-sm-9">
-                      <p className="text-muted mb-0">Abdulraof Mattur</p>
+                      <p className="text-muted mb-0">{user.username}</p>
                     </div>
                   </div>
                   <hr />
@@ -53,7 +58,7 @@ function Profile() {
                       <p className="mb-0">Email</p>
                     </div>
                     <div className="col-sm-9">
-                      <p className="text-muted mb-0">Abdulraof.y.mattur.com</p>
+                      <p className="text-muted mb-0">{user.email}</p>
                     </div>
                   </div>
                   <hr />
@@ -62,7 +67,7 @@ function Profile() {
                       <p className="mb-0">Phone</p>
                     </div>
                     <div className="col-sm-9">
-                      <p className="text-muted mb-0">0779123531</p>
+                      <p className="text-muted mb-0">{user.phone}</p>
                     </div>
                   </div>
                   <hr />
@@ -72,7 +77,7 @@ function Profile() {
                       <p className="mb-0">Address</p>
                     </div>
                     <div className="col-sm-9">
-                      <p className="text-muted mb-0">Amman, Jordan</p>
+                      <p className="text-muted mb-0">{`${user.city},${user.country}`}</p>
                     </div>
                   </div>
                 </div>
@@ -89,8 +94,8 @@ function Profile() {
                   <div className="card1">
                     <div className="card1-header px-4 py-5">
                       <h5 className="text-muted mb-0 text-center">
-                        Thanks for your Order,
-                        <span style={{ color: "#f5a3b7" }}>Abdulraof</span>!
+                        Thanks for your Order, {user.username}
+                        <span style={{ color: "#f5a3b7" }}>{user.name}</span>!
                       </h5>
                     </div>
                     <div className="card1-body p-4">
@@ -132,7 +137,9 @@ function Profile() {
                                   </p>
                                 </div>
                                 <div className="col-md-2 text-center d-flex justify-content-center align-items-center">
-                                  <p className="text-muted mb-0 small">${orderItem.price}</p>
+                                  <p className="text-muted mb-0 small">
+                                    ${orderItem.price}
+                                  </p>
                                 </div>
                               </div>
                               <hr

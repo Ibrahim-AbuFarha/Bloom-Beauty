@@ -40,3 +40,9 @@
 .swiper-button-prev {
   left: -20px;
 }
+@media (width<600px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+}

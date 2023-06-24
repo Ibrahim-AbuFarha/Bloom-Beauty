@@ -1,9 +1,17 @@
-import React, { useContext } from "react";
-import CartContext from "../../store/cartContext";
+import React from "react";
 import { Link } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 import "../../index.css";
 function NavBar() {
+  const user = JSON.parse(localStorage.getItem("user"));
+  const navigate = useNavigate();
+
+  const handleLogOut = () => {
+    localStorage.removeItem("user");
+
+    navigate("signIn");
+  };
+
   return (
     <nav class="navbar navbar-edit navbar-dark bg-dark  navbar-expand-lg ">
       <div class="container nav-wrapper ">
@@ -24,33 +32,56 @@ function NavBar() {
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <Link class="nav-link active" aria-current="page" to={"/"}>
                 Home
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <Link class="nav-link" to={"/products"}>
                 Shop
-              </a>
+              </Link>
             </li>
           </ul>
 
           <div className="d-flex align-items-center gap-3 justify-content-center">
-            <i class="fa-solid fa-circle-user " style={{ color: "#fff" }}></i>
-            <i
-              class="fa-solid cart fa-cart-shopping"
-              style={{ color: "#ffffff" }}
-            ></i>
-            <button class="btn fw-bold bg-light text-dark" type="button">
-              Logout
-            </button>
+            {user && (
+              <Link to={"/profile"}>
+                <i
+                  class="fa-solid fa-circle-user "
+                  style={{ color: "#fff" }}
+                ></i>
+              </Link>
+            )}
+            {user && (
+              <Link to={"/cart"}>
+                <i
+                  class="fa-solid cart fa-cart-shopping"
+                  style={{ color: "#ffffff" }}
+                ></i>
+              </Link>
+            )}
+            {user ? (
+              <button
+                class="btn fw-bold bg-light text-dark"
+                type="button"
+                onClick={handleLogOut}
+              >
+                Logout
+              </button>
+            ) : (
+              <button
+                class="btn fw-bold bg-light text-dark"
+                type="button"
+                onClick={() => navigate("/signIn")}
+              >
+                Signin
+              </button>
+            )}
           </div>
         </div>
       </div>
     </nav>
   );
 }
-
-
 
 export default NavBar;
