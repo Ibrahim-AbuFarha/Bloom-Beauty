@@ -7,12 +7,12 @@ body {
   text-rendering: optimizeLegibility;
   font-weight: initial;
 }
-
+/* 
 .dark {
-  background: #110f16;
-}
+  background: #fff;
+} */
 .best-seller-cards {
-  background-color: #000;
+  background-color: #222;
 }
 a,
 a:hover {
@@ -39,12 +39,9 @@ a:hover {
   color: #ffffff;
 }
 .postcard.dark {
-  background-color: #18151f;
+  background-color: #111;
 }
 
-.postcard .t-dark {
-  color: #18151f;
-}
 .postcard a {
   color: inherit;
 }
@@ -98,17 +95,19 @@ a:hover {
   justify-content: center;
 }
 .postcard .postcard__tagbox .tag__item {
-  display: inline-block;
-  background: rgba(83, 83, 83, 0.4);
-  border-radius: 3px;
-  padding: 2.5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+  border-radius: 5px;
+  padding: 5px 14px;
   margin: 0 5px 5px 0;
   cursor: default;
   user-select: none;
   transition: background-color 0.3s;
 }
 .postcard .postcard__tagbox .tag__item:hover {
-  background: rgba(83, 83, 83, 0.8);
+  background: transparent;
 }
 .postcard:before {
   content: "";
@@ -117,7 +116,7 @@ a:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(-70deg, #424242, transparent 50%);
+  background-image: linear-gradient(-70deg, #111111, transparent 50%);
   opacity: 1;
   border-radius: 10px;
 }
@@ -144,15 +143,7 @@ a:hover {
     padding: 3rem;
     width: 100%;
   }
-  .postcard .media.postcard__text:before {
-    content: "";
-    position: absolute;
-    display: block;
-    background: #18151f;
-    top: -20%;
-    height: 130%;
-    width: 55px;
-  }
+
   .postcard:hover .postcard__img {
     transform: scale(1.1);
   }
@@ -186,7 +177,7 @@ a:hover {
   }
 
   .postcard.dark .postcard__text:before {
-    background: #18151f;
+    background: #111;
   }
 
   .postcard.light .postcard__text:before {

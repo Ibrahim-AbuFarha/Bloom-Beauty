@@ -16,8 +16,8 @@ function CardsDark() {
   return (
     <section className="best-seller-cards ">
       <div className="container py-4">
-        <h1 className="h1 text-center" id="pageHeaderTitle">
-          My Cards Dark
+        <h1 className="h1 text-left" id="pageHeaderTitle">
+          Best Seller
         </h1>
         {items.map((item) => {
           if (item.rating >= 5)
@@ -45,8 +45,26 @@ function CardsDark() {
                       Podcast
                     </li>
                     <li className="tag__item">
-                      <i className="fas fa-clock mr-2" />
-                      55 mins.
+                      <i
+                        class="fa-solid fa-star"
+                        style={{ color: "#ffd401" }}
+                      ></i>
+                      <i
+                        class="fa-solid fa-star"
+                        style={{ color: "#ffd401" }}
+                      ></i>
+                      <i
+                        class="fa-solid fa-star"
+                        style={{ color: "#ffd401" }}
+                      ></i>
+                      <i
+                        class="fa-solid fa-star"
+                        style={{ color: "#ffd401" }}
+                      ></i>
+                      <i
+                        class="fa-solid fa-star"
+                        style={{ color: "#ffd401" }}
+                      ></i>
                     </li>
                     <li className="tag__item play blue">
                       <a href="#">
