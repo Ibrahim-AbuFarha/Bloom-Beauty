@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import "./ProductDescription.css";
 import CartContext from "../../store/cartContext";
+import Rate from "../ProductsPage/Rate";
 function ProductDescription({ product }) {
   console.log(product)
   const {addItem}=useContext(CartContext)
@@ -11,7 +12,7 @@ function ProductDescription({ product }) {
       </div>
       <div className="product-desc">
         <h2 className="product-title">{product.name}</h2>
-        <div className="product-stars">Stars</div>
+        <div className="product-stars">{<Rate/>}</div>
         <p className="product-price">{product.price}$</p>
         <p className="product-subDesc">{product.description}</p>
 

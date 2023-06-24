@@ -1,11 +1,11 @@
 import "./stylehome.css";
 import "./bestSellerWrapper.css";
 
-import React, { useEffect, useState } from "react";
-
+import React, { useEffect, useState, useContext } from "react";
+import CartContext from "../../store/cartContext";
 function BestSellerWrapper() {
   const [items, setItems] = useState([]);
-
+  const { addItem } = useContext(CartContext);
   useEffect(() => {
     fetch(
       "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
@@ -42,15 +42,15 @@ function BestSellerWrapper() {
                     <p className="product-card-price">{item.price}$</p>
                     <button
                       className="product-card-button"
-                      // onClick={() =>
-                      //   addItem({
-                      //     name: item.name,
-                      //     image: item.image_link,
-                      //     quantity: 1,
-                      //     price: item.price,
-                      //     id: item.id,
-                      //   })
-                      // }
+                      onClick={() =>
+                        addItem({
+                          name: item.name,
+                          image: item.image_link,
+                          quantity: 1,
+                          price: item.price,
+                          id: item.id,
+                        })
+                      }
                     >
                       Add To Cart
                     </button>

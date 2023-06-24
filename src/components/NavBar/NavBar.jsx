@@ -2,7 +2,13 @@ import React, { useContext } from "react";
 import CartContext from "../../store/cartContext";
 import { Link } from "react-router-dom";
 function NavBar() {
-  const { totalProducts } = useContext(CartContext);
+  const { totalProducts, deleteAllItems } = useContext(CartContext);
+  let isUser = true;
+  const handleLogOut = () => {
+    localStorage.removeItem("user");
+    // deleteAllItems();
+    isUser = false;
+  };
   return (
     <>
       {/* <!-- Navbar --> */}
@@ -35,12 +41,12 @@ function NavBar() {
             {/* <!-- Left links --> */}
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link" to={'/home'}>
+                <Link className="nav-link" to={"/home"}>
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={'/products'}>
+                <Link className="nav-link" to={"/products"}>
                   Products
                 </Link>
               </li>
@@ -58,7 +64,7 @@ function NavBar() {
             <Link className="text-reset me-3" to={"/cart"}>
               <i className="fas fa-shopping-cart"></i>
               <span className="badge rounded-pill badge-notification bg-danger">
-                {totalProducts()}
+                {isUser && totalProducts()}
               </span>
             </Link>
 
@@ -105,21 +111,24 @@ function NavBar() {
                 data-mdb-toggle="dropdown"
                 aria-expanded="false"
               >
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                  className="rounded-circle"
-                  height="25"
-                  alt="Black and White Portrait of a Man"
-                  loading="lazy"
-                />
-                <Link to={'/signIn'}>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  style={{ marginLeft: "10px" }}
-                >
-                  LogOut
-                </button>
+                <Link to={'/profile'}>
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                    className="rounded-circle"
+                    height="25"
+                    alt="Black and White Portrait of a Man"
+                    loading="lazy"
+                  />
+                </Link>
+                <Link to={"/signIn"}>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    style={{ marginLeft: "10px" }}
+                    onClick={handleLogOut}
+                  >
+                    LogOut
+                  </button>
                 </Link>
               </a>
               <ul

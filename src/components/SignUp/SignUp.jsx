@@ -7,6 +7,7 @@ function SignUp() {
   const [password, setPassword] = useState();
   const [email, setEmail] = useState();
 const navigate=useNavigate()
+//after submit sign up make a request to add user with details to users in json server
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -15,13 +16,14 @@ const navigate=useNavigate()
         password,
         email,
       });
+//after submit sign up make a request to add user cartItems to carts in json server
 
       await axios.post("http://localhost:3001/carts", {
         userId: user.id,
         cartItems: [],
       });
-      navigate("/signIn");
       // navigate to the sign in
+      navigate("/signIn");
       console.log("done");
     } catch (err) {
       console.log(err);

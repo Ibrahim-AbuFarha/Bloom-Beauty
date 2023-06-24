@@ -4,20 +4,24 @@ import { CartProduct } from "./CartProduct";
 import "./Cart.css";
 import CartContext from "../../store/cartContext";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
+  const navigate = useNavigate();
   const user = JSON.parse(localStorage.getItem("user"));
   const [isChecked, setIsChecked] = useState(false);
-  const { cartItems, totalPrice, deleteAllItems,totalProducts } = useContext(CartContext);
+  const { cartItems, totalPrice, deleteAllItems, totalProducts } =
+    useContext(CartContext);
   const handleCheckOut = () => {
     axios
       .post(`http://localhost:3001/orders`, {
         userId: user.id,
         orderItems: cartItems,
+        total: totalPrice(),
       })
       .then(() => {
         setIsChecked(true);
-        setTimeout(() => deleteAllItems(), 5000);
+        deleteAllItems();
       })
       //async return promise so settimeout expect to get call back function
       //so now its call back function
@@ -52,9 +56,7 @@ const Cart = () => {
           </div>
           <div className="summary-item">
             <p>Total Price:</p>
-            <p>
-              {totalPrice()}$
-            </p>
+            <p>{totalPrice()}$</p>
           </div>
           <button
             className="checkout-button"
@@ -69,8 +71,8 @@ const Cart = () => {
       {isChecked && (
         <div>
           <div className="pop-up">
-            <p>Your order has been submit</p>
-            <button>Ok!</button>
+            <p>Your order has been submitted.</p>
+            <button onClick={()=>navigate('/Home')}>Ok!</button>
           </div>
           <div class="popup-overlay"></div>
         </div>
