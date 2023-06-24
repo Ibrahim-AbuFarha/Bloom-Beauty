@@ -180,7 +180,7 @@ ul {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   /* width: 100%; */
   max-width: 100vw;
   height: 50vh;
@@ -195,4 +195,12 @@ ul {
   pointer-events: none;
 
   z-index: 1;
+}
+.landing-hero {
+  position: relative;
+}
+.shop-now-btn {
+  position: absolute;
+  bottom: 7rem;
+  right: 3rem;
 }

@@ -1,29 +1,31 @@
-import React from "react";
-import YouTube from "react-youtube";
-import CarouselWrapper from "./CarouselWrapper";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
-const HeroSection = ({ videoId }) => {
-  const videoOpts = {
-    playerVars: {
-      autoplay: 1,
-      controls: 0,
-      // loop: 100,
-      modestbranding: 1,
-      showinfo: 0,
-      rel: 0,
-      iv_load_policy: 3,
-      fs: 0,
-      disablekb: 1,
-      playsinline: 1,
-      mute: 1,
-    },
-  };
+const YouTubePlayer = ({ apiKey, videoId }) => {
+  const [videoUrl, setVideoUrl] = useState("");
+
+  useEffect(() => {
+    const fetchVideoUrl = async () => {
+      try {
+        const response = await axios.get(
+          `https://www.googleapis.com/youtube/v3/videos?part=player&id=${videoId}&key=${apiKey}`
+        );
+        const { data } = response;
+        const videoUrl = data.items[0].player.embedHtml;
+        setVideoUrl(videoUrl);
+      } catch (error) {
+        console.error("Error fetching YouTube video:", error);
+      }
+    };
+
+    fetchVideoUrl();
+  }, [apiKey, videoId]);
 
   return (
-    <section className="hero-section">
-      <YouTube videoId={videoId} opts={videoOpts} className="video-iframe" />
-    </section>
+    <div className="hero-section ">
+      {videoUrl && <div dangerouslySetInnerHTML={{ __html: videoUrl }} />}
+    </div>
   );
 };
 
-export default HeroSection;
+export default YouTubePlayer;

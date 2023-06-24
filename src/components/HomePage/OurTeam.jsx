@@ -28,7 +28,7 @@ function OurTeam() {
         <div className="row text-center">
           {/* <!-- Team item --> */}
           <div className="col-xl-3 col-sm-6  mb-5">
-            <div className="bg-white rounded bg-dark text-light  shadow-sm py-5 px-4">
+            <div className="bg-white rounded  text-light  shadow-sm py-5 px-4">
               <img
                 src="../images/download.png"
                 alt=""
@@ -67,9 +67,9 @@ function OurTeam() {
 
           {/* <!-- Team item --> */}
           <div className="col-xl-3 col-sm-6 mb-5">
-            <div className="bg-dark  rounded shadow-sm py-5 px-4">
+            <div className="bg-light  rounded shadow-sm py-5 px-4">
               <img
-                src="https://bootstrapious.com/i/snippets/sn-team/teacher-2.jpg"
+                src=""
                 alt=""
                 width="100"
                 class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
