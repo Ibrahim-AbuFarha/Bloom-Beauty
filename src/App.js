@@ -12,7 +12,7 @@
 import NavBar from "./components/NavBar/NavBar";
 // import ProfileSection from "./Pages/ProfileSection";
 // import ProductsPage from "./components/ProductsPage/ProductsPage";
-// import HomePage from "./Pages/HomePage";
+import HomePage from "./Pages/HomePage";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import ProductsPage from "./Pages/ProductsPage";
 
@@ -27,8 +27,7 @@ function App() {
     <div>
       <NavBar />
       {/* <ProductsPage /> */}
-      {/* <HomePage />  */}
-      
+      <HomePage />
     </div>
   );
 }
