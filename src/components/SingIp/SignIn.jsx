@@ -18,7 +18,7 @@ function SignIn() {
       if (user.length === 0) return setError(true);
 
       // save the user
-      localStorage.setItem("user", JSON.stringify(user));
+      localStorage.setItem("user", JSON.stringify(user[0]));
       console.log("ok");
       // navigate to new page
     } catch (err) {

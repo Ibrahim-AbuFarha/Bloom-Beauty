@@ -33,7 +33,7 @@ function SignUp() {
 
       await axios.post("http://localhost:3001/carts", {
         userId: user.id,
-        products: [],
+        cartItems: [],
       });
       // navigate to the sign in
       console.log("done");

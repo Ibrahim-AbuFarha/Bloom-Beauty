@@ -6,10 +6,20 @@ function ProductCate() {
   const [currentPage, setCurrentPage] = useState(1); // state of the page
 
   //Pageination :
-  const changeCPage = (id) => {};
-  const prevPage = () => {};
+  const changeCPage = (id) => {
+    setCurrentPage(id)
+  };
+  const prevPage = () => {
+    if(currentPage !== firstIndex){
+      setCurrentPage(currentPage - 1)
+    }
+  };
 
-  const nextPage = () => {};
+  const nextPage = () => {
+    if(currentPage !== lastIndex){
+      setCurrentPage(currentPage + 1)
+    }
+  };
   //Fetch Data:
   useEffect(() => {
     fetch(
@@ -19,7 +29,7 @@ function ProductCate() {
       .then((data) => setProArr(data));
   }, []);
 
-  const recordsPerPage = 12; // state for # of Cards each page
+  const recordsPerPage = 24; // state for # of Cards each page
   const lastIndex = currentPage * recordsPerPage;
   const firstIndex = lastIndex - recordsPerPage;
   const records = proArr.slice(firstIndex, lastIndex);
@@ -78,6 +88,7 @@ function ProductCate() {
       <div style={{ flexWrap: "wrap" }} className="row">
         {AllProducts}
       </div>
+      {/* NavBar PageInation */}
       <nav className="navPageinations">
         <ul className="PageInation">
           <li className="Page-item">
