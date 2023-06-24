@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import CartContext from "../../store/cartContext";
 import { Link } from "react-router-dom";
-import "../../index.css";
 function NavBar() {
   const { totalProducts, deleteAllItems } = useContext(CartContext);
   let isUser = true;
@@ -11,8 +10,11 @@ function NavBar() {
     isUser = false;
   };
   return (
-    <nav className="navbar  navbar-dark bg-dark  navbar-expand-lg ">
-      <div className="container ">
+    <nav
+      className="navbar navbar-dark bg-dark navbar-expand-lg"
+      style={{ height: "65px" }}
+    >
+      <div className="container">
         <button
           className="navbar-toggler text-light"
           type="button"
@@ -22,7 +24,10 @@ function NavBar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <i className="fa-sharp fa-solid fa-bars" style={{ color: "#ffffff" }}></i>{" "}
+          <i
+            className="fa-sharp fa-solid fa-bars"
+            style={{ color: "#ffffff" }}
+          ></i>{" "}
         </button>
         <a className="navbar-brand logo" href="#">
           Bloom Beauty
@@ -41,8 +46,11 @@ function NavBar() {
             </li>
           </ul>
 
-          <div classNameName="d-flex align-items-center gap-3 justify-content-center">
-            <i className="fa-solid fa-circle-user " style={{ color: "#fff" }}></i>
+          <div className="d-flex align-items-center gap-3 justify-content-center">
+            <i
+              className="fa-solid fa-circle-user"
+              style={{ color: "#fff" }}
+            ></i>
             <i
               className="fa-solid cart fa-cart-shopping"
               style={{ color: "#ffffff" }}

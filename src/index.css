@@ -20,13 +20,13 @@
   --red: #e77373;
   --orange: #fdb64e;
 }
-/* 
+
 .container {
   max-width: 1280px;
   margin-inline: auto;
 }
 
-.nav-link {
+/* .nav-link {
   color: #fff !important;
 }
 .bg-dark {
@@ -40,4 +40,4 @@
   /* background: #272a34 !important; */
 
   /* box-shadow: 10px 10px 30px 0px rgba(26, 40, 62, 0.1); 
-} */
+} */ 

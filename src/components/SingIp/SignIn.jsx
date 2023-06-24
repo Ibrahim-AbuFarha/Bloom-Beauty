@@ -32,7 +32,7 @@ function SignIn() {
   };
 
   return (
-    <section className="container">
+    <section className="container-">
       <h1> SignUp</h1>
       <form onSubmit={handleSubmit}>
         <input

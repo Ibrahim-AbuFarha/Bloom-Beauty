@@ -22,7 +22,7 @@
 
 .product-card-title,
 .product-card-price {
-  color: var(--black);
+  color: var(--black) ;
 }
 
 .product-card-subDesc {
@@ -36,6 +36,7 @@
   background-color: transparent;
   border: 2px var(--pink) solid;
   transition: all 0.3s;
+  color: var(--black);
 }
 
 .product-card-button:hover {
