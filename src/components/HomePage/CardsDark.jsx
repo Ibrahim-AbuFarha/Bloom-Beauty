@@ -16,9 +16,9 @@ function CardsDark() {
   return (
     <section className="best-seller-cards ">
       <div className="container py-4">
-        <h1 className="h1 text-left" id="pageHeaderTitle">
+        <h3 className="h1 text-left" id="pageHeaderTitle">
           Best Seller
-        </h1>
+        </h3>
         {items.map((item) => {
           if (item.rating >= 5)
             return (
@@ -31,9 +31,9 @@ function CardsDark() {
                   />
                 </a>
                 <div className="postcard__text">
-                  <h1 className="postcard__title blue">
+                  <h4 className="postcard__title blue">
                     <a href="#">{item.name}</a>
-                  </h1>
+                  </h4>
 
                   <div className="postcard__bar" />
                   <div className="postcard__preview-txt">

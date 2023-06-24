@@ -1,11 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
-/* This pen */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap");
+
 body {
-  font-family: "Baloo 2", cursive;
   font-size: 16px;
   color: #ffffff;
   text-rendering: optimizeLegibility;
   font-weight: initial;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h3 {
+  font-family: "Arapey", serif !important;
 }
 /* 
 .dark {
@@ -24,7 +27,8 @@ body {
   margin: 2rem 0;
   text-transform: uppercase;
   text-align: left;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  color: #f5a3b7 !important;
 }
 
 /* Cards */
@@ -129,7 +133,7 @@ body {
     flex-wrap: inherit;
   }
   .postcard .postcard__title {
-    font-size: 2rem;
+    color: #f5a3b7;
   }
   .postcard .postcard__tagbox {
     justify-content: start;

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import "../../index.css";
 function NavBar() {
   return (
-    <nav class="navbar navbar-edit navbar-dark bg-dark  navbar-expand-lg ">
+    <nav class="navbar navbar-edit navbar-dark bg-black  navbar-expand-lg  ">
       <div class="container nav-wrapper ">
         <button
           class="navbar-toggler text-light"
@@ -19,7 +19,8 @@ function NavBar() {
           <i class="fa-sharp fa-solid fa-bars" style={{ color: "#ffffff" }}></i>{" "}
         </button>
         <a class="navbar-brand logo" href="#">
-          Bloom Beauty
+          <span style={{ color: "#F5A3B7", fontFamily: "inherit" }}>Bloom</span>{" "}
+          Beauty
         </a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -50,7 +51,5 @@ function NavBar() {
     </nav>
   );
 }
-
-
 
 export default NavBar;
