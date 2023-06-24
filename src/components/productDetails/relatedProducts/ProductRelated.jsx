@@ -10,9 +10,11 @@ function ProductRelated({ brand }) {
         `http://makeup-api.herokuapp.com/api/v1/products.json?brand=${brand}`
       )
       .then(({ data }) => {
-        setProducts(data.slice(0,17));
-      }).catch((err)=>console.log(err))
-  },[]);
+        setProducts(data.slice(0, 17));
+      })
+      .catch((err) => console.log(err));
+  }, [brand]);
+
   return (
     <div className="product-related">
       <h3>You May Also Like</h3>

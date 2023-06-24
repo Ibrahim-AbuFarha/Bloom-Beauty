@@ -1,8 +1,11 @@
 import Cart from "../components/cart/Cart";
+import { CartProvider } from "../store/cartContext";
 function CartPage() {
   return (
     <>
-      <Cart />
+      <CartProvider>
+        <Cart />
+      </CartProvider>
     </>
   );
 }

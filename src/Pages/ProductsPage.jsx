@@ -5,16 +5,14 @@ import "../components/ProductsPage/Products.css";
 import ProductCate from "../components/ProductsPage/ProductCate";
 import Card from "../components/ProductsPage/Card";
 import Rate from "../components/ProductsPage/Rate";
+import { CartProvider } from "../store/cartContext";
 
 export default function ProductsPage() {
   return (
-    <>
-    <NavBar /> 
-    <ProductCate />
-      
-      {/* <Card /> */}
-      {/* <SideBar /> */}
-      
-    </>
+    <CartProvider>
+      <ProductCate />
+    </CartProvider>
   );
 }
+
+///////////////

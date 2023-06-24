@@ -76,9 +76,9 @@ function ProductCate() {
       <div className="grid">{AllProducts}</div>
       
       {/* NavBar PageInation */}
-      <nav className="navPageinations">
+      <div className="navPageinations">
         <ul className="PageInation">
-          <li className="Page-item">
+          <li className="Page-item1">
             <a href="/#" className="Page-link" onClick={prevPage}>
               Prev
             </a>
@@ -86,7 +86,7 @@ function ProductCate() {
           {numbers.map((n, i) => {
             return (
               <li
-                className={`Page-item ${currentPage === n ? "active" : ""}`}
+                className={`Page-item1 ${currentPage === n ? "active1" : ""}`}
                 key={i}
               >
                 <a
@@ -99,13 +99,13 @@ function ProductCate() {
               </li>
             );
           })}
-          <li className="Page-item">
+          <li className="Page-item1">
             <a href="/#" className="Page-link" onClick={nextPage}>
               Next{" "}
             </a>
           </li>
         </ul>
-      </nav>
+      </div>
     </section>
   );
 }
