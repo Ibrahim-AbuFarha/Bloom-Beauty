@@ -41,10 +41,6 @@ function CardsDark() {
                   </div>
                   <ul className="postcard__tagbox">
                     <li className="tag__item">
-                      <i className="fas fa-tag mr-2" />
-                      Podcast
-                    </li>
-                    <li className="tag__item">
                       <i
                         class="fa-solid fa-star"
                         style={{ color: "#ffd401" }}
@@ -65,12 +61,6 @@ function CardsDark() {
                         class="fa-solid fa-star"
                         style={{ color: "#ffd401" }}
                       ></i>
-                    </li>
-                    <li className="tag__item play blue">
-                      <a href="#">
-                        <i className="fas fa-play mr-2" />
-                        Play Episode
-                      </a>
                     </li>
                   </ul>
                 </div>

@@ -15,8 +15,8 @@ function NavBar() {
         >
           <i class="fa-sharp fa-solid fa-bars" style={{ color: "#ffffff" }}></i>{" "}
         </button>
-        <a class="navbar-brand" href="#">
-          Navbar
+        <a class="navbar-brand logo" href="#">
+          Bloom Beauty
         </a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -27,18 +27,15 @@ function NavBar() {
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                Link
+                Shop
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
             </li>
           </ul>
 
           <div className="d-flex align-items-center gap-3 justify-content-center">
-            <i class="fa-solid fa-circle-user" style={{ color: "#fff" }}></i>
+            <i class="fa-solid fa-circle-user " style={{ color: "#fff" }}></i>
             <i
-              class="fa-solid fa-cart-shopping"
+              class="fa-solid cart fa-cart-shopping"
               style={{ color: "#ffffff" }}
             ></i>
             <button class="btn fw-bold bg-light text-dark" type="button">
