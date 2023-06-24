@@ -1,23 +1,29 @@
 import React, { useEffect, useState } from "react";
 // import CardPro from "./CardPro";
+import Rate from "./Rate"
 
 function ProductCate() {
   const [proArr, setProArr] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1); // state of the page
+  const [currentPage, setCurrentPage] = useState(1); // state of the pageInation
+  const [query , setQuery] = useState("")
+
+
+  
+
 
   //Pageination :
   const changeCPage = (id) => {
-    setCurrentPage(id)
+    setCurrentPage(id);
   };
   const prevPage = () => {
-    if(currentPage !== firstIndex){
-      setCurrentPage(currentPage - 1)
+    if (currentPage !== firstIndex) {
+      setCurrentPage(currentPage - 1);
     }
   };
 
   const nextPage = () => {
-    if(currentPage !== lastIndex){
-      setCurrentPage(currentPage + 1)
+    if (currentPage !== lastIndex) {
+      setCurrentPage(currentPage + 1);
     }
   };
   //Fetch Data:
@@ -29,6 +35,13 @@ function ProductCate() {
       .then((data) => setProArr(data));
   }, []);
 
+
+
+  //Filter Function :
+  const handleChange = (e) => {
+    setQuery(e.target.value) 
+  }
+
   const recordsPerPage = 24; // state for # of Cards each page
   const lastIndex = currentPage * recordsPerPage;
   const firstIndex = lastIndex - recordsPerPage;
@@ -36,58 +49,32 @@ function ProductCate() {
   const nPages = Math.ceil(proArr.length / recordsPerPage);
   const numbers = [...Array(nPages + 1).keys()].slice(1);
 
-  const AllProducts = records.map((item) => {
-    // بدنا نطبع العدد يلي عملنا اله سلايس
+  //Maping on the Array :
+  // بدنا نطبع العدد يلي عملنا اله سلايس 
+  const AllProducts = records.filter((el) => {return (el.name.toLowerCase().includes(query))}).map((item) => {
     return (
-      // BootStrap Component:
-      <div className="col-sm-3" key={item.id}>
-        <div
-          style={{
-            marginBottom: "1em",
-            minHeight: "50vh",
-            display: "flex",
-            justifyContent: "space-between",
-          }}
-          className="card"
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-            className="bg-image hover-overlay ripple"
-            data-mdb-ripple-color="light"
-          >
-            <img
-              src={item.image_link}
-              className="img-fluid"
-              alt="This is alt pic"
-              style={{ width: "150px" }}
-            />
-            <a href="#!">
-              <div
-                className="mask"
-                style={{ background: "rgba(251, 251, 251, 0.15)" }}
-              ></div>
-            </a>
-          </div>
-          <div className="card-body">
-            <h5 className="card-title">{item.name}</h5>
-            <p>{item.price} Jd</p>
-            <a href="#!" className="btn btn-primary">
-              Add to cart
-            </a>
-          </div>
+      <div key={item.id} className="product-card">
+        <div className="product-card-img">
+          <img src={item.image_link} alt="" />
+        </div>
+        <div className="product-card-desc">
+          <h5 className="product-card-title">{item.name}</h5>
+          <p className="product-card-stars"></p>
+          <p className="product-card-price">{item.price}$</p>
+          <Rate/> 
+          <button className="product-card-button">Add To Cart</button>
         </div>
       </div>
     );
   });
+
+  //Return for component :
   return (
-    <div className="allCate" style={{ paddingLeft: "1em" }}>
-      <div style={{ flexWrap: "wrap" }} className="row">
-        {AllProducts}
-      </div>
+    //Filter Input :
+    <section className="allCate" style={{ paddingLeft: "1em" }}>
+      <input   className="filter" type="text" placeholder="Search..."  onChange={handleChange}/>
+      <div className="grid">{AllProducts}</div>
+      
       {/* NavBar PageInation */}
       <nav className="navPageinations">
         <ul className="PageInation">
@@ -119,8 +106,36 @@ function ProductCate() {
           </li>
         </ul>
       </nav>
-    </div>
+    </section>
   );
 }
 
 export default ProductCate;
+
+/* 
+<div className="product-card">
+      <div className="product-card-img">
+        <img src={product.image_link} alt="" />
+      </div>
+      <div className="product-card-desc">
+        <h5 className="product-card-title">{product.name}</h5>
+        <p className="product-card-stars"></p>
+        <p className="product-card-price">{product.price}$</p>
+        <button
+          className="product-card-button"
+          onClick={() =>
+            addItem({
+              name: product.name,
+              image: product.image_link,
+              quantity: 1,
+              price: product.price,
+              id: product.id,
+            })
+          }
+        >
+          Add To Cart
+        </button>
+      </div>
+    </div>
+*/
+
