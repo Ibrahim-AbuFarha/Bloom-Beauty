@@ -1,14 +1,9 @@
 import React, { useContext } from "react";
 import CartContext from "../../store/cartContext";
 import { Link } from "react-router-dom";
+//
+import "../../index.css";
 function NavBar() {
-  const { totalProducts, deleteAllItems } = useContext(CartContext);
-  let isUser = true;
-  const handleLogOut = () => {
-    localStorage.removeItem("user");
-    // deleteAllItems();
-    isUser = false;
-  };
   return (
     <nav class="navbar  navbar-dark bg-dark  navbar-expand-lg ">
       <div class="container ">
@@ -50,106 +45,7 @@ function NavBar() {
               Logout
             </button>
           </div>
-          {/* <!-- Collapsible wrapper --> */}
-
-          {/* <!-- Right elements --> */}
-          <div className="d-flex align-items-center">
-            {/* <!-- Icon --> */}
-            <Link className="text-reset me-3" to={"/cart"}>
-              <i className="fas fa-shopping-cart"></i>
-              <span className="badge rounded-pill badge-notification bg-danger">
-                {isUser && totalProducts()}
-              </span>
-            </Link>
-
-            {/* <!-- Notifications --> */}
-            <div className="dropdown">
-              <a
-                className="text-reset me-3 dropdown-toggle hidden-arrow"
-                href="/#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-mdb-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i className="fas fa-bell"></i>
-              </a>
-              <ul
-                className="dropdown-menu dropdown-menu-end"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li>
-                  <a className="dropdown-item" href="/#">
-                    Some news
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="/#">
-                    Another news
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="/#">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
-            </div>
-            {/* <!-- Avatar --> */}
-            <div className="dropdown">
-              <a
-                className="dropdown-toggle d-flex align-items-center hidden-arrow"
-                href="/#"
-                id="navbarDropdownMenuAvatar"
-                role="button"
-                data-mdb-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <Link to={"/profile"}>
-                  <img
-                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                    className="rounded-circle"
-                    height="25"
-                    alt="Black and White Portrait of a Man"
-                    loading="lazy"
-                  />
-                </Link>
-                <Link to={"/signIn"}>
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    style={{ marginLeft: "10px" }}
-                    onClick={handleLogOut}
-                  >
-                    LogOut
-                  </button>
-                </Link>
-              </a>
-              <ul
-                className="dropdown-menu dropdown-menu-end"
-                aria-labelledby="navbarDropdownMenuAvatar"
-              >
-                <li>
-                  <a className="dropdown-item" href="/#">
-                    My profile
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="/#">
-                    Settings
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="/#">
-                    Logout
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          {/* <!-- Right elements --> */}
         </div>
-        {/* <!-- Container wrapper --> */}
       </div>
     </nav>
   );
