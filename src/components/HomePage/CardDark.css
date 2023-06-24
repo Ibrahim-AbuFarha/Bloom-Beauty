@@ -14,8 +14,8 @@ body {
 .best-seller-cards {
   background-color: #222;
 }
-a,
-a:hover {
+.best-seller-cards a,
+.best-seller-cards a:hover {
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }

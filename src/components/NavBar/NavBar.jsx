@@ -2,8 +2,8 @@ import React from "react";
 import "../../index.css";
 function NavBar() {
   return (
-    <nav class="navbar  navbar-dark bg-dark  navbar-expand-lg ">
-      <div class="container ">
+    <nav class="navbar navbar-edit navbar-dark bg-dark  navbar-expand-lg ">
+      <div class="container nav-wrapper ">
         <button
           class="navbar-toggler text-light"
           type="button"

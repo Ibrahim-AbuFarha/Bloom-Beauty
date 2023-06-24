@@ -1,7 +1,7 @@
 // collection of your components page
 // import "../components/HomePage/testimonials.css";
 import CarouselWrapper from "../components/HomePage/CarouselWrapper";
-import BestSellerWrapper from "../components/HomePage/BestSellerWrapper";
+
 import YoutubeSection from "../components/HomePage/Youtube";
 import Testimonials from "../components/HomePage/Testimonials.js";
 import CardsDark from "../components/HomePage/CardsDark";
