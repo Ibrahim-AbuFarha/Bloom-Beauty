@@ -1,5 +1,45 @@
 {
-  "users": [],
-  "carts": [],
-  "orders": []
+  "users": [
+    {
+      "username": "ibrahim",
+      "password": "123123",
+      "email": "ibrahim@gmail.com",
+      "city": "jordan",
+      "postalCode": "88888",
+      "phone": "023123123",
+      "country": "Jordan",
+      "address": "amman",
+      "id": 1
+    }
+  ],
+  "carts": [
+    {
+      "userId": 1,
+      "cartItems": [],
+      "id": 1
+    }
+  ],
+  "orders": [
+    {
+      "userId": 1,
+      "orderItems": [
+        {
+          "name": "Maybelline Color Sensational Rebel Bloom Lipcolour ",
+          "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/fb9e6485500135d94163577da4c3579b_ra,w158,h184_pa,w158,h184.png",
+          "quantity": 1,
+          "price": "9.99",
+          "id": 89
+        },
+        {
+          "name": "Maybelline Color Show Nail Lacquer Veils ",
+          "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/64cbcfbd001435c3abc3d8f77c16a0bf_ra,w158,h184_pa,w158,h184.png",
+          "quantity": 1,
+          "price": "4.49",
+          "id": 145
+        }
+      ],
+      "total": "14.48",
+      "id": 1
+    }
+  ]
 }

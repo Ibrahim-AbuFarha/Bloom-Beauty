@@ -12,9 +12,9 @@ export default function CarouselWrapper() {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img
-            src="https://cdn.discordapp.com/attachments/1084370144588988447/1121949684307595285/image.png"
+            src="https://media.discordapp.net/attachments/1084370144588988447/1122239886196482048/Black_And_White_Minimal_Glamour_Makeup_Banner_Facebook_Cover_1640_800_px.png?width=1373&height=670"
             className="d-block w-100"
-            alt="..."
+            alt="Make up hero photo"
           />
         </div>
       </div>

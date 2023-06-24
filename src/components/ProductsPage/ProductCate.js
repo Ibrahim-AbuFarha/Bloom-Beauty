@@ -26,7 +26,7 @@ function ProductCate() {
   };
   //Fetch Data:
   useEffect(() => {
-    fetch(
+    fetch(   
       "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
     )
       .then((Response) => Response.json())
@@ -101,10 +101,11 @@ function ProductCate() {
       <div className="navPageinations">
         <ul className="PageInation">
           <li className="Page-item1">
-            <a href="/#" className="Page-link" onClick={prevPage}>
+            <a  className="Page-link" onClick={prevPage}>
               Prev
             </a>
           </li>
+
           {numbers.map((n, i) => {
             return (
               <li
@@ -112,7 +113,7 @@ function ProductCate() {
                 key={i}
               >
                 <a
-                  href="/#"
+                  
                   className="Page-link"
                   onClick={() => changeCPage(n)}
                 >
@@ -122,7 +123,7 @@ function ProductCate() {
             );
           })}
           <li className="Page-item1">
-            <a href="/#" className="Page-link" onClick={nextPage}>
+            <a className="Page-link" onClick={nextPage}>
               Next{" "}
             </a>
           </li>

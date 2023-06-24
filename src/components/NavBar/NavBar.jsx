@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "../../index.css";
+
 function NavBar() {
   const user = JSON.parse(localStorage.getItem("user"));
   const navigate = useNavigate();
@@ -13,10 +14,10 @@ function NavBar() {
   };
 
   return (
-    <nav class="navbar navbar-edit navbar-dark bg-dark  navbar-expand-lg ">
-      <div class="container nav-wrapper ">
+    <nav className="navbar navbar-edit navbar-dark bg-black  navbar-expand-lg  ">
+      <div className="container nav-wrapper">
         <button
-          class="navbar-toggler text-light"
+          className="navbar-toggler text-light"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarTogglerDemo03"
@@ -24,20 +25,24 @@ function NavBar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <i class="fa-sharp fa-solid fa-bars" style={{ color: "#ffffff" }}></i>{" "}
+          <i
+            className="fa-sharp fa-solid fa-bars"
+            style={{ color: "#ffffff" }}
+          ></i>{" "}
         </button>
-        <a class="navbar-brand logo" href="#">
-          Bloom Beauty
+        <a className="navbar-brand logo" href="#">
+          <span style={{ color: "#F5A3B7", fontFamily: "inherit" }}>Bloom</span>{" "}
+          Beauty
         </a>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <Link class="nav-link active" aria-current="page" to={"/"}>
+        <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0 bg-black">
+            <li className="nav-item">
+              <Link className="nav-link active" aria-current="page" to={"/"}>
                 Home
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link" to={"/products"}>
+            <li className="nav-item">
+              <Link className="nav-link" to={"/products"}>
                 Shop
               </Link>
             </li>
@@ -47,7 +52,7 @@ function NavBar() {
             {user && (
               <Link to={"/profile"}>
                 <i
-                  class="fa-solid fa-circle-user "
+                  className="fa-solid fa-circle-user "
                   style={{ color: "#fff" }}
                 ></i>
               </Link>
@@ -55,14 +60,14 @@ function NavBar() {
             {user && (
               <Link to={"/cart"}>
                 <i
-                  class="fa-solid cart fa-cart-shopping"
+                  className="fa-solid cart fa-cart-shopping"
                   style={{ color: "#ffffff" }}
                 ></i>
               </Link>
             )}
             {user ? (
               <button
-                class="btn fw-bold bg-light text-dark"
+                className="btn fw-bold bg-light text-dark "
                 type="button"
                 onClick={handleLogOut}
               >
@@ -70,7 +75,7 @@ function NavBar() {
               </button>
             ) : (
               <button
-                class="btn fw-bold bg-light text-dark"
+                className="btn fw-bold bg-light text-dark"
                 type="button"
                 onClick={() => navigate("/signIn")}
               >

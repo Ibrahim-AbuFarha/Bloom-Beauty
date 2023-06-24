@@ -18,12 +18,10 @@ export default function HomePage() {
     <CartProvider>
       <CarouselWrapper />
 
-      {/* <BestSellerWrapper /> */}
-
       <CardsDark />
       <OurTeam />
-      <YoutubeSection videoId={videoId} apiKey={apiKey} />
       <Testimonials />
+      <YoutubeSection videoId={videoId} apiKey={apiKey} />
     </CartProvider>
   );
 }

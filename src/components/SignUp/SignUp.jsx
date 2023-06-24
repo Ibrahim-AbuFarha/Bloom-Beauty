@@ -71,9 +71,9 @@ function SignUp() {
 
   return (
     <section className="containerOfContainer">
-      <section className="container-">
+      <section className="container-signUp">
         <h1> SignUp</h1>
-        <form onSubmit={handleSubmit}>
+        <form className="form-signUp" onSubmit={handleSubmit}>
           <input
             className="username"
             type="text"

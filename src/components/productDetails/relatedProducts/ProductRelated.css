@@ -3,7 +3,8 @@
 
 }
 .product-related h3{
-    color: #7FCCC6;
+    font-size: 45px;
+    color: var(--black);
     text-align: center;
     margin: 30px 0;
 }

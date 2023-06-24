@@ -7,14 +7,14 @@ import { faker } from "@faker-js/faker";
 function Testimonials() {
   return (
     <>
-      <div class="testimonials-clean">
-        <div class="container">
-          <div class="intro">
-            <h2 class="text-center">Testimonials </h2>
-            <p class="text-center testimonials-des">
-              Our customers love us💟! Read what they have to say below. Aliquam
-              sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet
-              vitae.
+      <div className="testimonials-clean">
+        <div className="container bd-dark">
+          <div className="intro">
+            <h1 className="text-center">Testimonials </h1>
+            <p className="text-center testimonials-des">
+              Our customers love us 🤍! Read what they have to say below.
+              Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut
+              laoreet vitae.
             </p>
           </div>
           <div className="row people">
@@ -48,7 +48,7 @@ function CardTestimonials({ name, avatar, text }) {
         <p className="description">{text}</p>
       </div>
       <div className="author">
-        <img className="rounded-circle" src={avatar} />
+        <img className="rounded-circle" src={avatar} alt="avatar photo" />
         <h5 className="name">{name}</h5>
       </div>
     </div>

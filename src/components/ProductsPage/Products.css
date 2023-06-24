@@ -19,7 +19,7 @@
   --orange: #fdb64e;
 }
 
-/* NavBar */ 
+/* NavBar */
 .btn11 {
   background-color: rgb(247, 202, 223);
   border: none;
@@ -33,16 +33,14 @@
   background-color: var(--red);
 }
 
-.d-flex >.text-reset  {
+.d-flex > .text-reset {
   margin-right: 0px !important;
 }
-
-
 
 /* Styling The Categories: */
 
 .allCate {
-  padding-top: 40px ;
+  padding-top: 40px;
 }
 
 /* Style the filter input */
@@ -50,9 +48,10 @@
 .filter {
   width: 20%;
   padding: 0.5em 1.1em;
-  border: none;
+  border: 1px solid black;
   margin-bottom: 1em;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
 }
 
 .filter:active1 {
@@ -115,11 +114,6 @@
   border: none;
 }
 
-
-
-
-
-
 /* PageInation Style */
 .navPageinations {
   margin-top: 20px;
@@ -134,7 +128,7 @@
   display: flex;
   list-style: none;
   justify-content: space-between;
-  background-color:white;
+  background-color: white;
   padding: 0 1.1em;
   border-radius: 6px;
   border: 1px solid rgb(191, 184, 184);
@@ -142,30 +136,28 @@
 }
 
 .PageInation > .Page-item1 {
-
   display: flex;
   justify-content: center;
   align-items: center;
   width: 12%;
   padding: 0.7em;
-  font-size: 1.1em ;
+  font-size: 1.1em;
   font-weight: 500;
   height: 100%;
 }
 .PageInation > .Page-item1:hover {
-    background-color: rgb(254, 186, 195, 0.5);
-    
+  /* background-color: var(--pink); */
+  text-decoration: underline;
 }
 
 .PageInation > .Page-item1 > a {
-    color: rgb(182 101 121);
+  color: var(--pink);
 }
 
 .active1 {
-  background-color: rgb(194, 129, 144);
+  /* background-color: var(--pink); */
+  text-decoration: underline;
 }
-
-
 
 /* Card Component Styling */
 
@@ -181,7 +173,7 @@
 }
 
 .img {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px 20px 0 0;
@@ -214,16 +206,15 @@
   font-weight: 500;
   color: black;
   border: 1px solid black;
-
 }
 /* Media */
-@media (max-width:1223px ) {
-  .grid {
+@media (max-width: 1223px) {
+  /* .grid {
     padding-left: 50px !important;
-  }
+  } */
 }
 
-@media (max-width:970px ) {
+@media (max-width: 970px) {
   /* .grid {
     gap: 1em;
   }
@@ -232,20 +223,16 @@
   } */
 }
 
-@media (max-width:668px ) {
-  .grid {
+@media (max-width: 668px) {
+  /* .grid {
     padding-left: 60px !important;
-  }
+  } */
   .product-card {
     width: 80%;
-    
   }
 }
-@media (max-width:310px ) {
-  .grid {
+@media (max-width: 310px) {
+  /* .grid {
     padding-left: 40px !important;
-  }
+  } */
 }
-
-
-
