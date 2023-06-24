@@ -8,7 +8,7 @@ import {
 } from "mdb-react-ui-kit";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 
-  function Footer() {
+function Footer() {
   return (
     <MDBFooter
       // bgColor="black"
@@ -45,22 +45,22 @@ import "mdb-react-ui-kit/dist/css/mdb.min.css";
               <h6 className="text-uppercase fw-bold mb-4">Products</h6>
               <p>
                 <a href="#!" className="text-reset">
-                  Angular
+                  Foundations
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  React
+                  Lipsticks
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Vue
+                  Blusher
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Laravel
+                  Eye Products
                 </a>
               </p>
             </MDBCol>
@@ -110,7 +110,7 @@ import "mdb-react-ui-kit/dist/css/mdb.min.css";
         </MDBContainer>
       </section>
 
-      <div className="text-center p-4" style={{ backgroundColor: "black"}}>
+      <div className="text-center p-4" style={{ backgroundColor: "black" }}>
         © 2021 Copyright:
         <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
           MDBootstrap.com
