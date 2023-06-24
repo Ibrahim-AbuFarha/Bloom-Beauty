@@ -73,84 +73,86 @@ function SignUp() {
  
 
   return (
-    <section className="container-">
-      <h1> SignUp</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          className="username"
-          type="text"
-          onChange={(e) => setUserName(e.target.value)}
-          required
-          placeholder="username"
-        />
-        <div className="emailerror">
+    <section className="containerOfContainer">
+      <section className="container-">
+        <h1 className="h1-"> SignUp</h1>
+        <form className="form-" onSubmit={handleSubmit}>
           <input
-            className="email"
-            type="email"
-            onChange={(e) => setEmail(e.target.value)}
-            onBlur={validateEmail}
+            className="username input-"
+            type="text"
+            onChange={(e) => setUserName(e.target.value)}
             required
-            placeholder="Email"
-          />{" "}
-          <br /> {emailError && <div className="error">{emailError}</div>}
-        </div>
+            placeholder="username"
+          />
+          <div className="emailerror">
+            <input
+              className="email input-"
+              type="email"
+              onChange={(e) => setEmail(e.target.value)}
+              onBlur={validateEmail}
+              required
+              placeholder="Email"
+            />{" "}
+            <br /> {emailError && <div className="error">{emailError}</div>}
+          </div>
 
-        <div className="passworerror">
+          <div className="passworerror">
+            <input
+              className="password input-"
+              type="password"
+              onChange={(e) => setPassword(e.target.value)}
+              onBlur={validatePassword}
+              required
+              placeholder="Password"
+            ></input>
+            <label htmlFor="" id="password error">
+              {passwordError && <div className="error">{passwordError}</div>}
+            </label>
+          </div>
+
           <input
-            className="password"
-            type="password"
-            onChange={(e) => setPassword(e.target.value)}
-            onBlur={validatePassword}
+            className="country input-"
+            type="text"
+            onChange={(e) => setCountry(e.target.value)}
             required
-            placeholder="Password"
-          ></input>
-          <label htmlFor="" id="password error">
-            {passwordError && <div className="error">{passwordError}</div>}
-          </label>
-        </div>
+            placeholder="Country"
+          />
+          <input
+            type="text"
+            onChange={(e) => setAddress(e.target.value)}
+            required
+            placeholder="Address"
+            className="address input-"
+          />
+          <input
+            type="text"
+            onChange={(e) => setCity(e.target.value)}
+            required
+            placeholder="City"
+            className="city input-"
+          />
 
-        <input
-          className="country"
-          type="text"
-          onChange={(e) => setCountry(e.target.value)}
-          required
-          placeholder="Country"
-        />
-        <input
-          type="text"
-          onChange={(e) => setAddress(e.target.value)}
-          required
-          placeholder="Address"
-          className="address"
-        />
-        <input
-          type="text"
-          onChange={(e) => setCity(e.target.value)}
-          required
-          placeholder="City"
-          className="city"
-        />
+          <input
+            type="text"
+            onChange={(e) => SetPostalCode(e.target.value)}
+            required
+            placeholder=" Postal Code"
+            className="postal"
+          />
+          <input
+            type="text"
+            onChange={(e) => setPhone(e.target.value)}
+            required
+            placeholder="Phone"
+            className="phone input-"
+          />
 
-        <input
-          type="text"
-          onChange={(e) => SetPostalCode(e.target.value)}
-          required
-          placeholder=" Postal Code"
-          className="postal"
-        />
-        <input
-          type="text"
-          onChange={(e) => setPhone(e.target.value)}
-          required
-          placeholder="Phone"
-          className="phone"
-        />
-
-        <button>Sign Up </button>
-        <div className="word">
-          I have an account already <a href="">SignIn</a>
-        </div>
-      </form>
+          <button className="button-">Sign Up </button>
+          <div className="word">
+            I have an account already <a href="">SignIn</a>
+          </div>
+        </form>
+      </section>
     </section>
   );
 }
