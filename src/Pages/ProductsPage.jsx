@@ -10,20 +10,7 @@ import { CartProvider } from "../store/cartContext";
 export default function ProductsPage() {
   return (
     <CartProvider>
-      {/* <NavBar />  */}
-      <div
-        className="sec2"
-        style={{
-          display: "flex",
-          padding: "2em",
-          justifyContent: "space-between",
-        }}
-      >
-        {/* <Card /> */}
-        <SideBar />
-        <ProductCate />
-        <Rate />
-      </div>
+      <ProductCate />
     </CartProvider>
   );
 }

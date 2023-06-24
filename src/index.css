@@ -20,9 +20,7 @@
   --red: #e77373;
   --orange: #fdb64e;
 }
-.logo {
-  font-family: "Arapey", serif;
-}
+/* 
 .container {
   max-width: 1280px;
   margin-inline: auto;
@@ -36,8 +34,10 @@
 }
 .bg-dark:hover {
   background-color: #000 !important;
-}
-.fa-circle-user,
-.cart {
-  font-size: 1.3rem;
-}
+} */
+/* .logout {
+  /* border-radius: 12px; */
+  /* background: #272a34 !important; */
+
+  /* box-shadow: 10px 10px 30px 0px rgba(26, 40, 62, 0.1); 
+} */

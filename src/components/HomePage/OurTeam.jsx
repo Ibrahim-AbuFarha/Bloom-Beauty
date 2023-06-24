@@ -30,7 +30,7 @@ function OurTeam() {
           <div className="col-xl-3 col-sm-6  mb-5">
             <div className="bg-white rounded  text-light  shadow-sm py-5 px-4">
               <img
-                src="https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg"
+                src="../images/download.png"
                 alt=""
                 width="100"
                 className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
