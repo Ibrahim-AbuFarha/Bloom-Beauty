@@ -1,5 +1,10 @@
 // import ProductPage from "./Pages/ProductPage";
 // import CartPage from "./Pages/CartPage";
+import SignUp from "./components/SignUp/SignUp";
+// import SignIn from "./components/SingIp/SignIn"; 
+import NavBar from "./components/NavBar/NavBar"
+import SignIn from "./components/SingIp/SignIn";
+import AuthPage from "./Pages/AuthPage";
 
 // import SignUp from "./components/SignUp/SignUp";
 // import ProductPage from "./Pages/ProductPage";
@@ -9,7 +14,6 @@
 // import './App.css';
 // import Cart from "./components/cart/Cart";
 // import Footer from "./components/Footer/Footer";
-import NavBar from "./components/NavBar/NavBar";
 // import ProfileSection from "./Pages/ProfileSection";
 // import ProductsPage from "./components/ProductsPage/ProductsPage";
 // import HomePage from "./Pages/HomePage";
@@ -26,12 +30,8 @@ import HomePage from "./Pages/HomePage";
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      {/* <ProductsPage /> */}
-      <HomePage />
-      {/* <ProductPage /> */}
-    </div>
+    <>
+    </>
   );
 }
 
