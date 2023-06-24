@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 
-.container {
+/* .container {
     width: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-}
+} */
 
 form {
     width: 100%;
