@@ -1,13 +1,12 @@
-import React, { useContext, useEffect, useState } from "react";
-// import CardPro from "./CardPro";
+import React, { useEffect, useState } from "react";
 import Rate from "./Rate";
 import { Link } from "react-router-dom";
-import CartContext from "../../store/cartContext";
+import { useNavigate } from "react-router-dom";
 function ProductCate() {
+  const navigate = useNavigate();
   const [proArr, setProArr] = useState([]);
   const [currentPage, setCurrentPage] = useState(1); // state of the pageInation
   const [query, setQuery] = useState("");
-  const { addItem } = useContext(CartContext);
 
   //Pageination :
   const changeCPage = (id) => {
@@ -26,15 +25,15 @@ function ProductCate() {
   };
   //Fetch Data:
   useEffect(() => {
-    fetch(   
+    fetch(
       "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
     )
       .then((Response) => Response.json())
       .then((data) => setProArr(data));
   }, []);
-//teeeeeeeeeeeeeeeeeeeeeeeeeeeeeeest
+  //teeeeeeeeeeeeeeeeeeeeeeeeeeeeeeest
 
-//teeeeeeeeeeeeeeeeeeeeeeeeeeeeeeest
+  //teeeeeeeeeeeeeeeeeeeeeeeeeeeeeeest
   //Filter Function :
   const handleChange = (e) => {
     setQuery(e.target.value);
@@ -68,17 +67,9 @@ function ProductCate() {
             <Rate />
             <button
               className="product-card-button"
-              onClick={() =>
-                addItem({
-                  name: item.name,
-                  image: item.image_link,
-                  quantity: 1,
-                  price: item.price,
-                  id: item.id,
-                })
-              }
+              onClick={() => navigate(`/product/${item.id}`)}
             >
-              Add To Cart
+              More Details!
             </button>
           </div>
         </div>
@@ -101,7 +92,7 @@ function ProductCate() {
       <div className="navPageinations">
         <ul className="PageInation">
           <li className="Page-item1">
-            <a  className="Page-link" onClick={prevPage}>
+            <a className="Page-link" onClick={prevPage}>
               Prev
             </a>
           </li>
@@ -112,11 +103,7 @@ function ProductCate() {
                 className={`Page-item1 ${currentPage === n ? "active1" : ""}`}
                 key={i}
               >
-                <a
-                  
-                  className="Page-link"
-                  onClick={() => changeCPage(n)}
-                >
+                <a className="Page-link" onClick={() => changeCPage(n)}>
                   {n}
                 </a>
               </li>
@@ -134,30 +121,3 @@ function ProductCate() {
 }
 
 export default ProductCate;
-
-/* 
-<div className="product-card">
-      <div className="product-card-img">
-        <img src={product.image_link} alt="" />
-      </div>
-      <div className="product-card-desc">
-        <h5 className="product-card-title">{product.name}</h5>
-        <p className="product-card-stars"></p>
-        <p className="product-card-price">{product.price}$</p>
-        <button
-          className="product-card-button"
-          onClick={() =>
-            addItem({
-              name: product.name,
-              image: product.image_link,
-              quantity: 1,
-              price: product.price,
-              id: product.id,
-            })
-          }
-        >
-          Add To Cart
-        </button>
-      </div>
-    </div>
-*/

@@ -30,10 +30,10 @@ function NavBar() {
             style={{ color: "#ffffff" }}
           ></i>{" "}
         </button>
-        <a className="navbar-brand logo" href="#">
+        <Link className="navbar-brand logo" to="/">
           <span style={{ color: "#F5A3B7", fontFamily: "inherit" }}>Bloom</span>{" "}
           Beauty
-        </a>
+        </Link>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 bg-black">
             <li className="nav-item">

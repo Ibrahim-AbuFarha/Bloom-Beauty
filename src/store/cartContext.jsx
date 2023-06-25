@@ -21,7 +21,7 @@ export function CartProvider({ children }) {
       .get(`http://localhost:3001/carts?userId=${user.id}`)
       .then(({ data }) => {
         //[{}]
-
+        console.log(data)
         setCartItems(data[0].cartItems);
         setCartId(data[0].id);
       });
@@ -47,6 +47,7 @@ export function CartProvider({ children }) {
       updatedCartItems = [...cartItems, { ...product }];
     }
     // req to update the cart items
+
     axios
       .patch(`http://localhost:3001/carts/${cartId}`, {
         cartItems: updatedCartItems,
@@ -142,5 +143,6 @@ export function CartProvider({ children }) {
     totalProducts,
   };
 
+  console.log(cartItems, cartId);
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 }
