@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate  } from "react-router-dom";
 
 const CartContext = createContext();
 export default CartContext;
@@ -21,7 +21,7 @@ export function CartProvider({ children }) {
       .get(`http://localhost:3001/carts?userId=${user.id}`)
       .then(({ data }) => {
         //[{}]
-        console.log(data)
+
         setCartItems(data[0].cartItems);
         setCartId(data[0].id);
       });
@@ -32,7 +32,7 @@ export function CartProvider({ children }) {
     if (!user) return navigate("/signIn");
     let updatedCartItems;
     const isFound = cartItems.find((item) => {
-      return item.id === product.id;
+      return item.id === product.id; //{} or undefined
     });
     // if the product found in cart just increase quantity
     if (isFound) {
@@ -99,13 +99,17 @@ export function CartProvider({ children }) {
       .then(() => setCartItems(deleteProduct))
       .catch((err) => console.log(err));
   };
-  // delete all the items
+  // delete all the items of specific product 
   const deleteAllItems = () => {
     axios
       .patch(`http://localhost:3001/carts/${cartId}`, {
         cartItems: [],
       })
-      .then(() => setCartItems([]))
+      .then(({ data }) => {
+        setCartItems([]);
+        console.log(data);
+      })
+
       .catch((err) => console.log(err));
   };
   //total price of products

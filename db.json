@@ -1,45 +1,59 @@
 {
   "users": [
     {
-      "username": "ibrahim",
-      "password": "123456",
-      "email": "ibrahim@gmail.com",
-      "city": "jordan",
-      "postalCode": "88888",
-      "phone": "023123123",
-      "country": "Jordan",
-      "address": "amman",
+      "username": "faten",
+      "password": "12345678",
+      "email": "faten@gmail.com",
+      "city": "amman",
+      "postalCode": "12003",
+      "phone": "0777479011",
+      "country": "amman",
+      "address": "amman , jordan",
       "id": 1
     }
   ],
   "carts": [
     {
       "userId": 1,
-      "cartItems": [
+      "cartItems": [],
+      "id": 1
+    }
+  ],
+  "orders": [
+    {
+      "userId": 1,
+      "orderItems": [
         {
-          "name": "Maybelline Face Studio Master Hi-Light Light Booster Blush",
-          "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/4621032a92cb428ad640c105b944b39c_ra,w158,h184_pa,w158,h184.png",
+          "name": "Maybelline Face Studio Master Hi-Light Light Booster Bronzer",
+          "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/991799d3e70b8856686979f8ff6dcfe0_ra,w158,h184_pa,w158,h184.png",
           "quantity": 2,
           "price": "14.99",
-          "id": 468
-        },
-        {
-          "name": "Maybelline Fit Me Blush",
-          "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/53d5f825461117c0d96946e1029510b0_ra,w158,h184_pa,w158,h184.png",
-          "quantity": 2,
-          "price": "10.29",
-          "id": 439
+          "id": 495
         },
         {
           "name": "Maybelline Facestudio Master Contour Kit",
           "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/4f731de249cbd4cb819ea7f5f4cfb5c3_ra,w158,h184_pa,w158,h184.png",
-          "quantity": 1,
+          "quantity": 4,
           "price": "15.99",
           "id": 477
         }
       ],
+      "total": "93.94",
       "id": 1
+    },
+    {
+      "userId": 1,
+      "orderItems": [
+        {
+          "name": "Maybelline Color Sensational Vivids Lipcolour",
+          "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/0d31f41c37fd18dfc02daa1671719378_ra,w158,h184_pa,w158,h184.png",
+          "quantity": 3,
+          "price": "9.99",
+          "id": 72
+        }
+      ],
+      "total": "29.97",
+      "id": 2
     }
-  ],
-  "orders": []
+  ]
 }

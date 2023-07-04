@@ -30,6 +30,7 @@ function SignUp() {
         country,
         address,
       });
+    
 
       await axios.post("http://localhost:3001/carts", {
         userId: user.id,

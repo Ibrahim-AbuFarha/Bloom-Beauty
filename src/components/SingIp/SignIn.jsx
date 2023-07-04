@@ -17,12 +17,12 @@ function SignIn() {
       const { data: user } = await axios.get(
         `http://localhost:3001/users?email=${email}&password=${password}`
       );
-
+console.log(user)//[{}]
       if (user.length === 0) return setError(true);
 
       // save the user in local storage
       localStorage.setItem("user", JSON.stringify(user[0])); // user[0] is an object{}
-      console.log(user);
+     
       navigate("/");
       // navigate to new page
     } catch (err) {

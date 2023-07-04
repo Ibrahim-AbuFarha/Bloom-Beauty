@@ -3,16 +3,14 @@ import "./profile.css";
 import axios from "axios";
 
 function Profile() {
-  const [userInfo, SetUserInfo] = useState([]);
   const [orders, setOrders] = useState([]);
-
   const user = JSON.parse(localStorage.getItem("user"));
-
   useEffect(() => {
     axios
       .get(`http://localhost:3001/orders?userId=${user.id}`)
       .then(({ data }) => {
         setOrders(data); //{object}
+        console.log(data);
       })
       .catch((err) => console.log(err));
   }, []);

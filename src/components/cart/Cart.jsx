@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 
 import { CartProduct } from "./CartProduct";
 import "./Cart.css";
@@ -28,7 +28,7 @@ const Cart = () => {
       .catch((error) => console.log(error));
   };
 
-  if (!cartItems) return <p>loading...</p>;
+  // if (!cartItems) return <p>loading...</p>;
 
   return (
     <div className="cart">
@@ -72,7 +72,7 @@ const Cart = () => {
         <div>
           <div className="pop-up">
             <p>Your order has been submitted.</p>
-            <button onClick={()=>navigate('/')}>Ok!</button>
+            <button onClick={() => navigate("/")}>Ok!</button>
           </div>
           <div class="popup-overlay"></div>
         </div>
