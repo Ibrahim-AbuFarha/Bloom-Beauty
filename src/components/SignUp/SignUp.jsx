@@ -20,7 +20,7 @@ function SignUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data: user } = await axios.post("https://localhost:3001/users", {
+      const { data: user } = await axios.post("http://localhost:3001/users", {
         username,
         password,
         email,
@@ -32,7 +32,7 @@ function SignUp() {
       });
     
 
-      await axios.post("https://localhost:3001/carts", {
+      await axios.post("http://localhost:3001/carts", {
         userId: user.id,
         cartItems: [],
       });

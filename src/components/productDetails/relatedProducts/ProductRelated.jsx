@@ -7,7 +7,7 @@ function ProductRelated({ brand }) {
   useEffect(() => {
     axios
       .get(
-        `https://makeup-api.herokuapp.com/api/v1/products.json?brand=${brand}`
+        `http://makeup-api.herokuapp.com/api/v1/products.json?brand=${brand}`
       )
       .then(({ data }) => {
         setProducts(data.slice(0, 17));

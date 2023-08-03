@@ -18,7 +18,7 @@ export function CartProvider({ children }) {
 
     //to get the user id from local storage and set it for his cart
     axios
-      .get(`https://localhost:3001/carts?userId=${user.id}`)
+      .get(`http://localhost:3001/carts?userId=${user.id}`)
       .then(({ data }) => {
         //[{}]
 
@@ -50,7 +50,7 @@ export function CartProvider({ children }) {
     // req to update the cart items
 
     axios
-      .patch(`https://localhost:3001/carts/${cartId}`, {
+      .patch(`http://localhost:3001/carts/${cartId}`, {
         cartItems: updatedCartItems,
       })
       .then(() => {
@@ -72,7 +72,7 @@ export function CartProvider({ children }) {
       // req to update the cart items
 
       axios
-        .patch(`https://localhost:3001/carts/${cartId}`, {
+        .patch(`http://localhost:3001/carts/${cartId}`, {
           cartItems: updatedCartItems,
         })
         .then(() => setCartItems(updatedCartItems));
@@ -94,7 +94,7 @@ export function CartProvider({ children }) {
 
     // req to update the cart items
     axios
-      .patch(`https://localhost:3001/carts/${cartId}`, {
+      .patch(`http://localhost:3001/carts/${cartId}`, {
         cartItems: deleteProduct,
       })
       .then(() => setCartItems(deleteProduct))
@@ -103,7 +103,7 @@ export function CartProvider({ children }) {
   // delete all the items of specific product 
   const deleteAllItems = () => {
     axios
-      .patch(`https://localhost:3001/carts/${cartId}`, {
+      .patch(`http://localhost:3001/carts/${cartId}`, {
         cartItems: [],
       })
       .then(({ data }) => {

@@ -26,7 +26,7 @@ function ProductCate() {
   //Fetch Data:
   useEffect(() => {
     fetch(
-      "https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
+      "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
     )
       .then((Response) => Response.json())
       .then((data) => setProArr(data));

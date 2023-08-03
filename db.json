@@ -32,6 +32,28 @@
       "country": "Jordan",
       "address": "Al Jubeiha, Amman, Jordan",
       "id": 3
+    },
+    {
+      "username": "123",
+      "password": "123123123",
+      "email": "123@g.com",
+      "city": "jordan",
+      "postalCode": "88888",
+      "phone": "023123123",
+      "country": "Jordan",
+      "address": "amman",
+      "id": 4
+    },
+    {
+      "username": "5",
+      "password": "12345678",
+      "email": "5@gmail.com",
+      "city": "jordan",
+      "postalCode": "88888",
+      "phone": "023123123",
+      "country": "Jordan",
+      "address": "amman",
+      "id": 5
     }
   ],
   "carts": [
@@ -49,6 +71,16 @@
       "userId": 3,
       "cartItems": [],
       "id": 3
+    },
+    {
+      "userId": 4,
+      "cartItems": [],
+      "id": 4
+    },
+    {
+      "userId": 5,
+      "cartItems": [],
+      "id": 5
     }
   ],
   "orders": [
