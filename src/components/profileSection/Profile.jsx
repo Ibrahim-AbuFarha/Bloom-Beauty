@@ -7,7 +7,7 @@ function Profile() {
   const user = JSON.parse(localStorage.getItem("user"));
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/orders?userId=${user.id}`)
+      .get(`https://localhost:3001/orders?userId=${user.id}`)
       .then(({ data }) => {
         setOrders(data); //{object}
         console.log(data);

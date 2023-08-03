@@ -14,7 +14,7 @@ const Cart = () => {
     useContext(CartContext);
   const handleCheckOut = () => {
     axios
-      .post(`http://localhost:3001/orders`, {
+      .post(`https://localhost:3001/orders`, {
         userId: user.id,
         orderItems: cartItems,
         total: totalPrice(),
