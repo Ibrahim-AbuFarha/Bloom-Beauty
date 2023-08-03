@@ -30,6 +30,7 @@ export function CartProvider({ children }) {
   //add items to the cart
   const addItem = (product) => {
     if (!user) return navigate("/signIn");
+    
     let updatedCartItems;
     const isFound = cartItems.find((item) => {
       return item.id === product.id; //{} or undefined

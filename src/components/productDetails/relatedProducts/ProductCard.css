@@ -1,5 +1,6 @@
 .product-card {
-  box-shadow: 0 0 1px  var(--black);
+  position: relative;
+  box-shadow: 0 0 1px var(--black);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   overflow: hidden;
@@ -22,16 +23,19 @@
 
 .product-card-title,
 .product-card-price {
-  color: var(--black) ;
+  color: var(--black);
 }
 
 .product-card-subDesc {
   color: var(--blue-gray);
 }
 .product-card-button {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
   width: 100%;
   border-radius: 4px;
-  padding: 5px;
+  padding: 10px;
   font-weight: 500;
   background-color: transparent;
   border: 2px var(--pink) solid;

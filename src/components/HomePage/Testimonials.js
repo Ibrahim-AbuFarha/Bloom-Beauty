@@ -24,7 +24,7 @@ function Testimonials() {
               text="Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est."
             />
             <CardTestimonials
-              name="Sarah Ahamed"
+              name="Sarah Ahmed"
               avatar={faker.image.avatar()}
               text="Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id."
             />

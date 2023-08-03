@@ -75,7 +75,7 @@ function NavBar() {
               </button>
             ) : (
               <button
-                className="btn fw-bold bg-light text-dark"
+                className="btn fw-bold bg-light   text-dark"
                 type="button"
                 onClick={() => navigate("/signIn")}
               >

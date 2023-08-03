@@ -7,7 +7,7 @@ function ProductCard({ product }) {
 
   return (
     <div className="product-card">
-      <Link to={`/product/${product.id}`}>
+      <Link to={`/product/${product.id}`} onClick={() => window.scrollTo(0, 0)}>
         <div className="product-card-img">
           <img src={product.image_link} alt="" />
         </div>

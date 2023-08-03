@@ -1,14 +1,14 @@
 {
   "users": [
     {
-      "username": "faten",
-      "password": "12345678",
-      "email": "faten@gmail.com",
-      "city": "amman",
-      "postalCode": "12003",
-      "phone": "0777479011",
-      "country": "amman",
-      "address": "amman , jordan",
+      "username": "ahmed",
+      "password": "123123123",
+      "email": "ahmad123@gmail.com",
+      "city": "Amman",
+      "postalCode": "11931",
+      "phone": "+962772574609",
+      "country": "Amman",
+      "address": "Al Jubeiha, Amman, Jordan",
       "id": 1
     }
   ],
@@ -24,36 +24,15 @@
       "userId": 1,
       "orderItems": [
         {
-          "name": "Maybelline Face Studio Master Hi-Light Light Booster Bronzer",
-          "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/991799d3e70b8856686979f8ff6dcfe0_ra,w158,h184_pa,w158,h184.png",
-          "quantity": 2,
-          "price": "14.99",
-          "id": 495
-        },
-        {
-          "name": "Maybelline Facestudio Master Contour Kit",
-          "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/4f731de249cbd4cb819ea7f5f4cfb5c3_ra,w158,h184_pa,w158,h184.png",
+          "name": "Maybelline Fit Me Bronzer",
+          "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/d4f7d82b4858c622bb3c1cef07b9d850_ra,w158,h184_pa,w158,h184.png",
           "quantity": 4,
-          "price": "15.99",
-          "id": 477
+          "price": "10.29",
+          "id": 488
         }
       ],
-      "total": "93.94",
+      "total": "41.16",
       "id": 1
-    },
-    {
-      "userId": 1,
-      "orderItems": [
-        {
-          "name": "Maybelline Color Sensational Vivids Lipcolour",
-          "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/0d31f41c37fd18dfc02daa1671719378_ra,w158,h184_pa,w158,h184.png",
-          "quantity": 3,
-          "price": "9.99",
-          "id": 72
-        }
-      ],
-      "total": "29.97",
-      "id": 2
     }
   ]
 }

@@ -37,6 +37,10 @@
 .nav-link {
   color: #fff !important;
 }
+
+.nav-link:hover {
+  color: #f5a3b7 !important;
+}
 .navbar-edit {
   background-color: #000 !important;
 }

@@ -64,8 +64,8 @@ button:disabled {
   color: white;
   font-weight: bold;
   padding: 20px;
-  max-width: 400px;
-  height: 200px;
+  max-width: 500px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,6 +82,7 @@ button:disabled {
   cursor: pointer;
   border-radius: 15px;
   padding: 5px;
+  width: 100px;
 }
 .popup-overlay {
   position: fixed;
